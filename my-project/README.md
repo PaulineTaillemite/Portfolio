@@ -14,4 +14,4 @@ modifier petit logo navbar
 modifier font
 modifier image hero et augmenter la taille si possible
 
-31m51
+32m53
