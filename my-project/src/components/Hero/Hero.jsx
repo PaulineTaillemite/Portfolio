@@ -14,7 +14,7 @@ const Hero = () => {
         <div>
             <main className='bg-lightcolor text-white'>
                 <div className="container">
-                    <div className='grid grid-cols-1 md:grid-cols-3 gap-10 min-h-[600px] place-items-center py-20 md:py-0'>
+                    <div className='grid grid-cols-1 md:grid-cols-3  gap-12 min-h-[600px] place-items-center py-20 md:py-0'>
                         {/* IMAGE SECTION */}
                         <div className='grid col-span-2 relative h-full justify-center items-center'>
                             <div className='w-[280px] sm:w-[400px] md:w-[450px]'>
@@ -39,7 +39,7 @@ const Hero = () => {
                         {/* PRESENTATION SECTION */}
                         <div className='space-y-7'>
                             <p className='text-sm opacity-70 tracking-widest translate-y-3 '>- Introduction</p>
-                            <h1 className='text-2xl md:text-3xl'>Developer FullStack, based in Paris.</h1>
+                            <h1 className='text-2xl lg:text-3xl'>Developer FullStack, based in Paris.</h1>
                             <p className='text-sm leading-6 opacity-70'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias id soluta tenetur ut, iste dolores. Dolor sit amet consectetur adipisicing.</p>
                             <button className='text-primary  border-b-2 border-primary text-xl font-bold p-1 flex items-center gap-4 group' >About me <FaArrowRight className='text-sm group-hover:translate-x-2 transition duration-200' /> </button>
 
