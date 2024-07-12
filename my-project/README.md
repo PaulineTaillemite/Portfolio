@@ -13,5 +13,6 @@ checker les configs de responsive
 modifier petit logo navbar
 modifier font
 modifier image hero et augmenter la taille si possible
+finaliser le burger menu
 
 32m53
