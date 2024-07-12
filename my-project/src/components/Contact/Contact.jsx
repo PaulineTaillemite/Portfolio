@@ -6,7 +6,7 @@ const Contact = () => {
     <main className='bg-darkcolor text-white '>
         
         <div className="container py-10 lg:py-20 ">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 place-items-center">
                 
                 {/* left side */}
                 <section className=' space-y-7 lg:max-w-[380px]'>
