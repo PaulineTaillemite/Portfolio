@@ -11,7 +11,7 @@ const Skills = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 place-items-center">
 
                 {/* front end section */}
-                <div className='flex items-center gap-6'>
+                <div className='bg-[#f55bbc]/30 flex items-center gap-6 p-7 '>
                     <FaReact className='text-4xl' />
                     <div className='space-y-3'>
                         <p className='text-3xl'>Front End</p>
@@ -20,7 +20,7 @@ const Skills = () => {
                 </div>
 
                 {/* back end section */}
-                <div className='flex items-center gap-6'>
+                <div className='bg-[#f55bbc]/30 flex items-center gap-6 p-7'>
                     <FaServer className='text-4xl' />
                     <div className='space-y-3'>
                         <p className='text-3xl'>Back End</p>
@@ -29,11 +29,11 @@ const Skills = () => {
                 </div>
 
                 {/* soft skills section */}
-                <div className='flex items-center gap-6'>
+                <div className='bg-[#f55bbc]/30 flex items-center gap-6 p-7'>
                     <FaCodepen className='text-4xl' />
                     <div className='space-y-3'>
-                        <p className='text-3xl'>Project Management</p>
-                        <p>Lorem ipsum dolor sit.</p>
+                        <p className='text-3xl'>Project Design</p>
+                        {/* <p>Lorem ipsum dolor sit.</p> */}
                     </div>
                 </div>
 

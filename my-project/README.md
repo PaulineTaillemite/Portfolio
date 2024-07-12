@@ -17,4 +17,4 @@ finaliser le burger menu
 renommer composant contact en about me
 revoir centrage 2eme component
 
-32m53
+59:00
