@@ -14,5 +14,7 @@ modifier petit logo navbar
 modifier font
 modifier image hero et augmenter la taille si possible
 finaliser le burger menu
+renommer composant contact en about me
+revoir centrage 2eme component
 
 32m53
