@@ -19,4 +19,4 @@ revoir centrage 2eme component
 refactor en mapping des stacks dans skills
 renommer tableau et objet projects
 
-59:00
+1M13 46
