@@ -18,7 +18,7 @@ const Skills = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 place-items-center">
 
                 {/* front end section */}
-                <div className='bg-[#f55bbc]/30 flex items-center gap-6 px-7 py-12 '>
+                <div className='bg-[#f55bbc]/30 flex items-center gap-6 px-7 py-12 hover:shadow-lg hover:bg-primary/70 hover:scale-105 duration-500'>
                     <FaReact className='text-4xl' />
                     <div className='space-y-3'>
                         <p className='text-3xl'>Front End</p>
