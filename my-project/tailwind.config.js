@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      height: {
+        '128': '32rem',  // Ajoute une nouvelle classe 'h-128' pour une hauteur de 32rem
+      },
       colors:{
         primary : "#3120c7",
         lightcolor : "#bd8ff2",
