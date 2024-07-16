@@ -10,10 +10,13 @@ import { IoLocationOutline } from "react-icons/io5";
 import { IoMailOutline } from "react-icons/io5";
 import { IoIosPhonePortrait } from "react-icons/io";
 
+
 const Contactform = () => {
     return (
         <div>
             <main className='bg-darkcolor'>
+
+            
                 <div className="container ">
 
                     <div class="grid lg:grid-cols-2 items-center max-lg:justify-center gap-6 h-full sm:p-12 p-8 max-sm:p-4">

@@ -29,7 +29,7 @@ const Navbar = () => {
     return (
         <div>
 
-            <div className='py-6 bg-lightcolor text-white'>
+            <div className='py-6 text-white'>
                 <div className="container flex justify-between items-center ">
 
                     {/* Logo section */}
@@ -42,7 +42,7 @@ const Navbar = () => {
                                 return(
                                     <li key={item.id}>
                                     <a href={item.link}
-                                    className='hover:text-primary text-xl font-semibold text-white/70 duration-300'>{item.title}</a>
+                                    className='hover:text-primary text-xl font-semibold text-white duration-300'>{item.title}</a>
                                     </li>
                                     )
                                 })}
