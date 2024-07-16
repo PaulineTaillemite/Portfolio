@@ -45,33 +45,79 @@ const Hobbies = () => {
 
                     <div className="carousel carousel-end rounded-box ">
 
-                        <div className="carousel-item">
-                            <img src={Img6} alt="Gaming" className='h-128 w-auto object-cover' />
+                        <div className="carousel-item relative group">
+                            <img src={Img6} alt="Gaming" className="h-128 w-auto object-cover group-hover:blur-sm transition duration-300" />
+
+                            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <p className="text-white text-lg px-2 py-1">Gaming</p>
+                            </div>
                         </div>
-                        <div className="carousel-item">
-                            <img src={Img7} alt="Cinema" className='h-128 w-auto object-cover' />
+
+                        <div className="carousel-item relative group">
+                            <img src={Img7} alt="Cinema" className="h-128 w-auto object-cover group-hover:blur-sm transition duration-300" />
+
+                            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <p className="text-white text-lg px-2 py-1">Cinema</p>
+                            </div>
                         </div>
-                        <div className="carousel-item">
-                            <img src={Img1} alt="India" className='h-128 w-auto object-cover' />
+
+                        <div className="carousel-item relative group">
+                            <img src={Img1} alt="India" className="h-128 w-auto object-cover group-hover:blur-sm transition duration-300" />
+
+                            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <p className="text-white text-lg px-2 py-1">India</p>
+                            </div>
                         </div>
-                        <div className="carousel-item">
-                            <img src={Img5} alt="Newyork" className='h-128 w-auto object-cover' />
+
+                        <div className="carousel-item relative group">
+                            <img src={Img5} alt="NewYork" className="h-128 w-auto object-cover group-hover:blur-sm transition duration-300" />
+
+                            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <p className="text-white text-lg px-2 py-1">New York</p>
+                            </div>
                         </div>
-                        <div className="carousel-item">
-                            <img src={Img9} alt="EldenRing" className='h-128 w-auto object-cover' />
+
+                        <div className="carousel-item relative group">
+                            <img src={Img9} alt="EldenRing" className="h-128 w-auto object-cover group-hover:blur-sm transition duration-300" />
+
+                            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <p className="text-white text-lg px-2 py-1">Elden Ring</p>
+                            </div>
                         </div>
-                        <div className="carousel-item">
-                            <img src={Img2} alt="Food" className='h-128 w-auto object-cover' />
+
+                        <div className="carousel-item relative group">
+                            <img src={Img2} alt="Baos" className="h-128 w-auto object-cover group-hover:blur-sm transition duration-300" />
+
+                            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <p className="text-white text-lg px-2 py-1">BaosZi</p>
+                            </div>
                         </div>
-                        <div className="carousel-item">
-                            <img src={Img3} alt="TechnoMusic" className='h-128 w-auto object-cover' />
+
+                        <div className="carousel-item relative group">
+                            <img src={Img3} alt="TechnoMusic" className="h-128 w-auto object-cover group-hover:blur-sm transition duration-300" />
+
+                            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <p className="text-white text-lg px-2 py-1">Techno Music</p>
+                            </div>
                         </div>
-                        <div className="carousel-item">
-                            <img src={Img8} alt="DeathStranding" className='h-128 w-auto object-cover' />
+
+                        <div className="carousel-item relative group">
+                            <img src={Img8} alt="Death Stranding" className="h-128 w-auto object-cover group-hover:blur-sm transition duration-300" />
+
+                            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <p className="text-white text-lg px-2 py-1">Death Stranding</p>
+                            </div>
                         </div>
-                        <div className="carousel-item">
-                            <img src={Img4} alt="Food" className='h-128 w-auto object-cover' />
+
+                        <div className="carousel-item relative group">
+                            <img src={Img4} alt="MoreBaozis" className="h-128 w-auto object-cover group-hover:blur-sm transition duration-300" />
+
+                            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <p className="text-white text-lg px-2 py-1">More Baos</p>
+                            </div>
                         </div>
+
+
 
                     </div>
 
