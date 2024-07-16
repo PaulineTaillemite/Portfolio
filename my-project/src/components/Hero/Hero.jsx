@@ -6,7 +6,6 @@ import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { SiBento } from "react-icons/si";
 import { FaLinkedinIn } from "react-icons/fa";
-import backgroundMp4 from './../assets/my.mp4';
 import backgroundMp42 from './../assets/my2.mp4'
 
 
