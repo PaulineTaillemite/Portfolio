@@ -1,10 +1,5 @@
 import React from 'react'
-import DeathStranding from '.././assets/caroussel_hobbies/deathstranding.avif';
-import EldenRing from '.././assets/caroussel_hobbies/eldenring.jpg';
-import Food from '.././assets/caroussel_hobbies/food.jpg';
-import India from '.././assets/caroussel_hobbies/india.jpg';
-import Naruto from '.././assets/caroussel_hobbies/naruto.webp';
-import NewYork from '.././assets/caroussel_hobbies/newyorkcity.jpg';
+
 /* 
 TEST EN DUR POUR LE CARROUSSEL */
 import Img1 from '.././assets/carousseltest2/img1.jpg';
@@ -17,16 +12,20 @@ import Img7 from '.././assets/carousseltest2/img7.jpg';
 import Img8 from '.././assets/carousseltest2/img8.png'
 import Img9 from '.././assets/carousseltest2/img9.png'
 
-
-/* ESSAYER LA MÊME CHOSE EN MAPPANT LE TABLEAY */
-const hobbiesList = [
-    { id: 1, title: "Elden Ring", img: EldenRing, link: "#" },
-    { id: 2, title: "BaoZis", img: Food, link: "#" },
-    { id: 3, title: "India", img: India, link: "#" },
-    { id: 4, title: "Naruto", img: Naruto, link: "#" },
-    { id: 5, title: "Death Stranding", img: DeathStranding, link: "#" },
-    { id: 6, title: "NewYork", img: NewYork, link: "#" }
+const hobbiesList=[
+    {id : 1, title : "gaming", img : Img6 , text : "Platinum Trophies"},
+    {id : 2, title : "cinema", img : Img7 , text : "Horror Movies"},
+    {id : 3, title : "india", img : Img1 , text : "Travelling in India"},
+    {id : 4, title : "newyork", img : Img5 , text : "Living in NYC"},
+    {id : 5, title : "eldenring", img : Img9 , text : " Dying (too many times) in Elden Ring"},
+    {id : 6, title : "food", img : Img2 , text : "Eat food"},
+    {id : 7, title : "technomusic", img : Img3 , text : "Dance like nobody's watching"},
+    {id : 8, title : "deathstranding", img : Img8 , text : "Uber Eat but make it scary"},
+    {id : 9, title : "morefood", img : Img4 , text : "Eat MORE food"},
 ]
+
+
+
 
 
 const Hobbies = () => {
