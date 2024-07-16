@@ -18,5 +18,6 @@ renommer composant contact en about me
 revoir centrage 2eme component
 refactor en mapping des stacks dans skills
 renommer tableau et objet projects
+mettre les liens des projets sur la home page
 
 1M13 46
