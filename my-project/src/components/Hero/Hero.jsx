@@ -21,12 +21,20 @@ const Hero = () => {
                                 <h1 className=' text-4xl md:text-6xl font-bold relative z-20'>Pauline <br/> Taillemite.</h1>
                                 <div className='h-[4px] w-[30px] bg-primary mt-4'></div>
                             {/* social media section */}
-                            <div className='flex gap-6 mt-24'>
-                                <FaGithub className='text-2xl hover:scale-125 cursor-pointer duration-200' />
-                                <FaLinkedinIn className='text-2xl hover:scale-125 cursor-pointer duration-200' />
-                                <FaInstagram className='text-2xl hover:scale-125 cursor-pointer duration-200' />
-                                <SiBento className='text-2xl hover:scale-125 cursor-pointer duration-200' />
-                            </div>
+                            <div className='flex gap-6 mt-12'>
+                                        <a href="https://github.com/PaulineTaillemite" target="_blank" rel="noopener noreferrer">
+                                            <FaGithub className='text-2xl hover:scale-125 cursor-pointer duration-200' />
+                                        </a>
+                                        <a href="https://www.linkedin.com/in/pauline-taillemite-%F0%9F%91%A9%F0%9F%8F%BB%E2%80%8D%F0%9F%8E%A4-1aa80a5b/" target="_blank" rel="noopener noreferrer">
+                                            <FaLinkedinIn className='text-2xl hover:scale-125 cursor-pointer duration-200' />
+                                        </a>
+                                        <a href="https://www.instagram.com/polinetlmt/" target="_blank" rel="noopener noreferrer">
+                                            <FaInstagram className='text-2xl hover:scale-125 cursor-pointer duration-200' />
+                                        </a>
+                                        <a href="https://bento.me/pauline-tlmt" target="_blank" rel="noopener noreferrer">
+                                            <SiBento className='text-2xl hover:scale-125 cursor-pointer duration-200' />
+                                        </a>
+                                    </div>
                             </div>
                             <div className='absolute -right-6 md:-right-32 bottom-0'>
                                 <img src={Logo3} 
