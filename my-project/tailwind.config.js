@@ -11,7 +11,7 @@ export default {
       },
       colors:{
         primary : "#3120c7",
-        lightcolor : "#bd8ff2",
+        lightcolor : "#d6b8e3",
         darkcolor : "#252734"
       },
       container : {

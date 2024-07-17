@@ -23,7 +23,7 @@ const Contactform = () => {
 
                         {/* contact form  */}
                         <div class="max-w-lg max-lg:mx-auto max-lg:text-center max-lg:mb-6">
-                            <h2 class="text-3xl text-white ">Contact Me</h2>
+                            <h2 class="text-3xl font-semibold text-white ">Contact Me</h2>
                             <p class="text-xs  mt-4 leading-relaxed text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nesciunt inventore accusamus asperiores eligendi odio totam soluta voluptatem assumenda nulla? .</p>
 
                             <form class="mx-auto mt-8 bg-white rounded-lg p-6 shadow-md space-y-4">
@@ -36,7 +36,7 @@ const Contactform = () => {
                                 <textarea placeholder='Message' rows="6"
                                     class="w-full rounded-md px-6 bg-[#f0f1f2] text-sm pt-3 outline-none"></textarea>
                                 <button type='button'
-                                    class="text-white bg-lightcolor hover:bg-darkcolor font-semibold rounded-md text-sm px-6 py-3 block w-full">Send
+                                    class="text-white bg-[#80dce0] hover:bg-darkcolor font- uppercase rounded-md text-sm px-6 py-3 block w-full">Send
                                     Message</button>
                             </form>
                         </div>

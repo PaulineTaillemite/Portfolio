@@ -13,7 +13,7 @@ const Contact = () => {
                             <p className='text-sm opacity-70 tracking-widest translate-y-3 '>- About me</p>
                             <h1 className='text-2xl lg:text-3xl'>Put here a catch phrase.</h1>
                             <p className='text-sm leading-6 opacity-70'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi cum quidem amet accusantium. Doloremque dignissimos tenetur, maxime laborum odit ipsa laboriosam omnis ducimus deleniti. Ut, officiis minima odio consectetur non aliquid dignissimos similique sapiente. In molestias quisquam quidem accusantium vel animi? Deleniti dicta ut culpa placeat itaque saepe eaque nam?.</p>
-                            <button className='text-lightcolor  border-b-2 border-lightcolor text-xl font-bold p-1 flex items-center gap-4 group' > Download my resume {" "} <FaArrowRight className='text-sm group-hover:translate-x-2 transition duration-200' /> </button>
+                            <button className='text-[#80dce0]  border-b-2 border-[#80dce0] text-xl font-bold p-1 flex items-center gap-4 group' > Download my resume {" "} <FaArrowRight className='text-sm group-hover:translate-x-2 transition duration-200' /> </button>
 
                         </section>
                 {/* right side */} 
@@ -25,12 +25,12 @@ const Contact = () => {
                     {/* stacks sections */}
                      <div className='grid grid-cols-2 gap-4'>
                      <div className='flex gap-3 items-center'>
-                        <p className='text-6xl font-bold text-lightcolor'>2</p>
+                        <p className='text-6xl font-bold text-[#80dce0]'>2</p>
                         <p className='font-semibold'>Years of Fullstack Web Development education in Ada Tech School.</p>
                      </div>
 
                      <div className='flex gap-3 items-center'>
-                        <p className='text-6xl font-bold text-lightcolor'>120</p>
+                        <p className='text-6xl font-bold text-[#80dce0]'>120</p>
                         <p className='font-semibold'>Completed projects </p>
                      </div>
 
