@@ -24,7 +24,7 @@ const container = (delay) => ({
         duration : durée de la transition en secondes (ici 0.5 secondes).
         delay : délai avant le début de la transition, passé en paramètre à la fonction container. */
         transition: {
-            duration: 0.5,
+            duration: 0.4,
             delay: delay,
         },
     },
