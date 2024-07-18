@@ -1,6 +1,8 @@
 import React from 'react'
 import Logo from './../assets/cat_logo.svg';
 import Logo3 from './../assets/study_logo.svg';
+import myFace from './../assets/myface/4.png'
+
 import backgroundMp42 from './../assets/my2.mp4';
 
 import { FaArrowRight, FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
@@ -64,7 +66,7 @@ const Hero = () => {
                                     className='h-[4px] w-[30px] bg-primary mt-4'></motion.div>
 
                                 {/* social media section */}
-                                <div className='flex gap-6 mt-12'>
+                                <div className='flex gap-6 mt-12 z-20'>
 
 
                                     <motion.div
@@ -117,7 +119,7 @@ const Hero = () => {
                                     initial={{x:-100}}
                                     whileInView={{x:0}}
                                     transition={{duration:1.1, type:"spring"}}
-                                    src={Logo3}
+                                    src={myFace}
                                     alt=""
                                     className='scale-150 relative z-10 w-[150px] sm:w-[250px] md:w-full'
                                 />
