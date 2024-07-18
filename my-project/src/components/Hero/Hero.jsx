@@ -63,7 +63,7 @@ const Hero = () => {
                                     variants={container(0.6)}
                                     initial="hidden"
                                     whileInView="show"
-                                    className='h-[4px] w-[30px] bg-primary mt-4 relative z-20'></motion.div>
+                                    className='h-[4px] w-[30px] bg-darkcolor mt-4 relative z-20'></motion.div>
 
                                 {/* social media section */}
                                 <div className='flex gap-6 mt-12 relative z-20'>
@@ -144,7 +144,7 @@ const Hero = () => {
                                 variants={container(0.8)}
                                 initial="hidden"
                                 whileInView={"show"}
-                                className='text-primary  border-b-2 border-primary text-xl font-bold p-1 flex items-center gap-4 group' >About me <FaArrowRight className='text-sm group-hover:translate-x-2 transition duration-200' /> </motion.button>
+                                className='text-darkcolor  border-b-2 border-darkcolor text-xl font-bold p-1 flex items-center gap-4 group' >About me <FaArrowRight className='text-sm group-hover:translate-x-2 transition duration-200' /> </motion.button>
 
                         </div>
                     </div>
