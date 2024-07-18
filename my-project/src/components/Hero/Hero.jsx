@@ -44,8 +44,8 @@ const Hero = () => {
                     className="w-full h-screen absolute z-[-1] object-cover  top-0"
                 />
 
-                <div className="container">
-                    <div className='grid grid-cols-1 md:grid-cols-3  gap-12 min-h-[600px] lg:overflow-y-hidden place-items-center py-20 md:py-0'>
+                <div className="container ">
+                    <div className='grid grid-cols-1 md:grid-cols-3  gap-12 min-h-[600px] lg:overflow-y-hidden lg:overflow-x-hidden place-items-center py-20 md:py-0'>
                         {/* IMAGE SECTION */}
                         <div className='grid col-span-2 relative h-full justify-center items-center'>
                             <div className='w-[280px] sm:w-[400px] md:w-[450px]'>
@@ -112,7 +112,12 @@ const Hero = () => {
                                 </div>
                             </div>
                             <div className='absolute -right-6 md:-right-32 bottom-0'>
-                                <img src={Logo3}
+                                
+                                <motion.img 
+                                    initial={{x:-100}}
+                                    whileInView={{x:0}}
+                                    transition={{duration:1.1, type:"spring"}}
+                                    src={Logo3}
                                     alt=""
                                     className='scale-150 relative z-10 w-[150px] sm:w-[250px] md:w-full'
                                 />
