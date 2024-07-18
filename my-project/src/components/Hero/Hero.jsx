@@ -1,12 +1,34 @@
 import React from 'react'
-import Logo from './../assets/cat_logo.svg'
-import Logo3 from './../assets/study_logo.svg'
-import { FaArrowRight } from "react-icons/fa"
-import { FaGithub } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+import Logo from './../assets/cat_logo.svg';
+import Logo3 from './../assets/study_logo.svg';
+import backgroundMp42 from './../assets/my2.mp4';
+
+import { FaArrowRight, FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { SiBento } from "react-icons/si";
-import { FaLinkedinIn } from "react-icons/fa";
-import backgroundMp42 from './../assets/my2.mp4'
+import { motion } from "framer-motion";
+
+
+/* fonction qui retourne un objet qui contient deux états d'animation : hidden et show. */
+
+const container = (delay) =>({
+    /* état initial de l'objet invisible et position initial de +100 dans l'axe horizontal*/
+    hidden: {
+        opacity:0,
+        x:100,
+    },
+    /* état final de l'objet avec une opacity de 1 et une position à 0 */
+    show : {
+        opacity: 1,
+        x: 0,
+        /* L'objet transition à l'intérieur de show définit comment la transition entre ces deux états se déroule :
+        duration : durée de la transition en secondes (ici 0.5 secondes).
+        delay : délai avant le début de la transition, passé en paramètre à la fonction container. */
+        transition : {
+            duration : 0.5,
+            delay : delay,
+        },
+    },
+});
 
 
 
@@ -27,8 +49,20 @@ const Hero = () => {
                         {/* IMAGE SECTION */}
                         <div className='grid col-span-2 relative h-full justify-center items-center'>
                             <div className='w-[280px] sm:w-[400px] md:w-[450px]'>
-                                <h1 className=' text-4xl md:text-6xl font-bold relative z-20'>Pauline <br /> Taillemite.</h1>
-                                <div className='h-[4px] w-[30px] bg-primary mt-4'></div>
+
+                                <motion.h1 
+                                variants={container(0.2)} /* fonction container appelé avec un delay de 0.2 */
+                                initial="hidden"
+                                whileInView="show" /* définit que l'élementg doit passé à l'état show lorsqu'il entre dans la vue  */
+                                className=' text-4xl md:text-6xl font-bold relative z-20'>Pauline <br /> Taillemite.
+                                </motion.h1>
+                                
+                                <motion.div 
+                                 variants={container(0.4)}
+                                 initial="hidden"
+                                 whileInView="show"
+                                className='h-[4px] w-[30px] bg-primary mt-4'></motion.div>
+
                                 {/* social media section */}
                                 <div className='flex gap-6 mt-12'>
                                     <a href="https://github.com/PaulineTaillemite" target="_blank" rel="noopener noreferrer">

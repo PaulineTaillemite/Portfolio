@@ -19,6 +19,6 @@ revoir centrage 2eme component
 refactor en mapping des stacks dans skills
 renommer tableau et objet projects
 mettre les liens des projets sur la home page
-faire le pop up d^^^-^^^`$`u cv
+faire le pop up du cv
 
 1M13 46
