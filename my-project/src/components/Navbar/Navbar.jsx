@@ -57,11 +57,13 @@ const Navbar = () => {
                     initial={{opacity:0, scale:0}}
                     whileInView={{opacity:1, scale:1}}
                     
-                    src={Logo2} alt="" className='w-[150px]'/></div>
+                    src={Logo2} alt="" className=''/></div>
+
+
 
                     {/*  Navbar Menu mapping du Navbar Tableau d'objet*/}
                     <div>
-                        <ul className='hidden md:flex justify-center gap-10 '>
+                        <ul className='hidden md:flex justify-center gap-10 p-9 '>
                             {NavMenu.map((item) => {
                                 return(
                                     <motion.li 
