@@ -42,7 +42,10 @@ const Contactform = () => {
                             <h2 class="text-3xl font-semibold text-white ">Contact Me</h2>
                             <p class="mt-4 text-sm leading-6 opacity-70 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nesciunt inventore accusamus asperiores eligendi odio totam soluta voluptatem assumenda nulla? .</p>
 
-                            <form class="mx-auto mt-8 bg-white rounded-lg p-6 shadow-md space-y-4">
+                            <motion.form 
+                            initial={{opacity:0, scale:0}}
+                            whileInView={{opacity:1, scale:1, transition:{duration:0.8}}}
+                            class="mx-auto mt-8 bg-white rounded-lg p-6 shadow-md space-y-4">
                                 <input type='text' placeholder='Name'
                                     class="w-full rounded-md h-12 px-6 bg-[#f0f1f2] text-sm outline-none" />
                                 <input type='email' placeholder='Email'
@@ -54,31 +57,49 @@ const Contactform = () => {
                                 <button type='button'
                                     class="text-white bg-[#80dce0] hover:bg-darkcolor font- uppercase rounded-md text-sm px-6 py-3 block w-full">Send
                                     Message</button>
-                            </form>
+                            </motion.form>
                         </div>
 
                         <div class=" pl-10 z-10 relative  text-white" >
                             <div className='grid col-span-2 relative h-full justify-center items-center'>
                                 <div className='w-[280px] sm:w-[400px] md:w-[450px]'>
-                                    <h1 className=' text-4xl md:text-6xl font-bold relative z-20 pb-4'>Pauline <br /> Taillemite.</h1>
+
+                                    <motion.h1 
+                                    variants={container(0.2)}
+                                    initial="hidden"
+                                    whileInView="show"
+                                    className=' text-4xl md:text-6xl font-bold relative z-20 pb-4'>Pauline <br /> Taillemite.</motion.h1>
 
 
                                     <div className='grid gap-3'>
-                                        <div className="flex gap-3">
+                                        <motion.div 
+                                        variants={container(0.4)}
+                                        initial="hidden"
+                                        whileInView="show"
+                                        className="flex gap-3">
                                             <IoLocationOutline />
                                             <p className='text-sm font-extralight opacity-70'> Boulevard de Grenelle, Paris 15, France.</p>
-                                        </div>
+                                        </motion.div>
 
-                                        <div className="flex gap-3">
+                                        <motion.div 
+                                        variants={container(0.6)}
+                                        initial="hidden"
+                                        whileInView="show"
+                                        className="flex gap-3">
                                             <IoMailOutline />
                                             <a href={`mailto:pauline.taillemite@gmail.com`} className='text-sm font-extralight opacity-70'>
                                                 pauline.taillemite@gmail.com
                                             </a>
-                                        </div>
-                                        <div className="flex gap-3 ">
+                                        </motion.div>
+
+                                        <motion.div 
+                                        variants={container(0.8)}
+                                        initial="hidden"
+                                        whileInView="show"
+                                        className="flex gap-3 ">
                                             <IoIosPhonePortrait />
                                             <p className='text-sm font-extralight opacity-70'> +33 6 58 91 09 43</p>
-                                        </div>
+                                        </motion.div>
                                     </div>
 
 
