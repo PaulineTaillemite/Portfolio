@@ -1,4 +1,5 @@
 import React from 'react'
+import Navbar from '../Navbar/Navbar';
 import Logo from './../assets/cat_logo.svg';
 import Logo3 from './../assets/study_logo.svg';
 import myFace from './../assets/myface/8.png'
@@ -36,14 +37,15 @@ const container = (delay) => ({
 
 const Hero = () => {
     return (
-        <div>
+        <div >
+            <Navbar />
             <main className=' text-white'>
                 <video
                     src={backgroundMp42}
                     autoPlay
                     loop
                     muted
-                    className="w-full h-screen absolute z-[-1] object-cover  top-0"
+                    className="w-full h-screen absolute z-[-1] object-cover top-0"
                 />
 
                 <div className="container ">

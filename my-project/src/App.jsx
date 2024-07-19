@@ -10,7 +10,7 @@ import Contactform from './components/ContactForm/Contactform'
 const App = () => {
   return (
     <main className='overflow-x-hidden'>
-      <Navbar />
+    {/*   <Navbar /> */}
       <Hero />
       <Contact />
       <Skills />
