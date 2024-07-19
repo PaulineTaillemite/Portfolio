@@ -11,14 +11,14 @@ import { SiAsana, } from "react-icons/si";
 
 const Skills = () => {
   return (
-    <div className='bg-lightcolor'>
+    <div className='bg-[#9cd4d9]'>
 
        {/*  card section */}
-        <div className="container py-10 text-white">
+        <div className="container py-10 text-darkcolor">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 place-items-center">
 
                 {/* front end section */}
-                <div className='bg-[#f55bbc]/30 flex items-center gap-6 px-7 py-12 hover:shadow-lg hover:bg-primary/70 hover:scale-105 duration-500'>
+                <div className='bg-[#fae7e6]/30 flex items-center gap-6 px-7 py-12 hover:shadow-lg hover:bg-[#e07595]/70 hover:scale-105 duration-500'>
                     <FaReact className='text-4xl' />
                     <div className='space-y-3'>
                         <p className='text-3xl'>Front End</p>
@@ -27,7 +27,7 @@ const Skills = () => {
                 </div>
 
                 {/* back end section */}
-                <div className='bg-[#f55bbc]/30 flex items-center gap-6 px-7 py-12'>
+                <div className='bg-[#fae7e6]/30 flex items-center gap-6 px-7 py-12 hover:shadow-lg hover:bg-[#e07595]/70 hover:scale-105 duration-500'>
                     <FaServer className='text-4xl' />
                     <div className='space-y-3'>
                         <p className='text-3xl'>Back End</p>
@@ -36,7 +36,7 @@ const Skills = () => {
                 </div>
 
                 {/* soft skills section */}
-                <div className='bg-[#f55bbc]/30 flex items-center gap-6 px-7 py-12'>
+                <div className='bg-[#fae7e6]/30 flex items-center gap-6 px-7 py-12 hover:shadow-lg hover:bg-[#e07595]/70 hover:scale-105 duration-500'>
                     <FaCodepen className='text-4xl' />
                     <div className='space-y-3'>
                         <p className='text-3xl'>Project Design</p>
@@ -48,7 +48,7 @@ const Skills = () => {
         </div>
 
         {/* logo stacks section */}
-        <div className='container text-white '>
+        <div className='container text-darkcolor '>
             <div className='container py-10  text-6xl gap-5 place-items-center justify-center grid grid-cols-3 md:grid-cols-4 '>
                 <FaReact className='hover:rotate-45 duration-200  ' />
                 <IoLogoJavascript className='hover:scale-125 duration-200 ' />

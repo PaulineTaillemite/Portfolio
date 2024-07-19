@@ -12,7 +12,7 @@ const projectList = [
 
 const Projects = () => {
     return (
-        <div className='bg-lightcolor py-20 text-white '>
+        <div className='bg-[#9cd4d9] py-20 text-darkcolor '>
 
             <div className="container  ">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 items-center gap-4">
@@ -21,7 +21,7 @@ const Projects = () => {
                         <p className='text-sm opacity-70 tracking-widest translate-y-3 '>- Projects</p>
                         <h1 className='text-2xl lg:text-3xl'>All creative works and group projects.</h1>
                         <p className='text-sm leading-6 opacity-70'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi cum quidem amet accusantium. Doloremque dignissimos tenetur, maxime laborum odit ipsa laboriosam omnis ducimus deleniti.</p>
-                        <button className=' border-b-2 border-lightcolor text-xl font-bold p-1 flex items-center gap-4 group' > More Projects {" "} <FaArrowRight className='text-sm group-hover:translate-x-2 transition duration-200' /> </button>
+                        <button className=' border-b-2 border-darkcolor text-xl font-bold p-1 flex items-center gap-4 group' > More Projects {" "} <FaArrowRight className='text-sm group-hover:translate-x-2 transition duration-200' /> </button>
 
                     </section>
 

@@ -20,5 +20,6 @@ refactor en mapping des stacks dans skills
 renommer tableau et objet projects
 mettre les liens des projets sur la home page
 faire le pop up du cv
+voir l'espace blanc entre le hero et le contact ?
 
 1M13 46
