@@ -113,7 +113,7 @@ const Hero = () => {
                                     transition={{ duration: 1.1, type: "spring" }}
                                     src={myFace}
                                     alt=""
-                                    className='scale-100 w-[150px] sm:w-[250px] md:w-full'
+                                    className='img-shadow scale-100 w-[150px] sm:w-[250px] md:w-full'
                                 />
                             </div>
                         </div>
