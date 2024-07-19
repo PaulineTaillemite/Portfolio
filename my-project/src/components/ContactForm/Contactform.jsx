@@ -9,6 +9,22 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
 import { IoMailOutline } from "react-icons/io5";
 import { IoIosPhonePortrait } from "react-icons/io";
+import { motion } from "framer-motion";
+
+const container = (delay) => ({
+    hidden: {
+        opacity: 0,
+        x: 100,
+    },
+    show: {
+        opacity: 1,
+        x: 0,
+        transition: {
+            duration: 0.6,
+            delay: delay,
+        },
+    },
+});
 
 
 const Contactform = () => {
@@ -16,7 +32,7 @@ const Contactform = () => {
         <div>
             <main className='bg-darkcolor'>
 
-            
+
                 <div className="container ">
 
                     <div class="grid lg:grid-cols-2 items-center max-lg:justify-center gap-6 h-full sm:p-12 p-8 max-sm:p-4">
@@ -24,7 +40,7 @@ const Contactform = () => {
                         {/* contact form  */}
                         <div class="max-w-lg max-lg:mx-auto max-lg:text-center max-lg:mb-6">
                             <h2 class="text-3xl font-semibold text-white ">Contact Me</h2>
-                            <p class="text-xs  mt-4 leading-relaxed text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nesciunt inventore accusamus asperiores eligendi odio totam soluta voluptatem assumenda nulla? .</p>
+                            <p class="mt-4 text-sm leading-6 opacity-70 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nesciunt inventore accusamus asperiores eligendi odio totam soluta voluptatem assumenda nulla? .</p>
 
                             <form class="mx-auto mt-8 bg-white rounded-lg p-6 shadow-md space-y-4">
                                 <input type='text' placeholder='Name'
@@ -70,25 +86,48 @@ const Contactform = () => {
 
                                     {/* direct contact section */}
                                     <div className='flex gap-6 mt-12'>
+
+                                        <motion.div
+                                        variants={container(0.2)}
+                                        initial="hidden"
+                                        whileInView="show">
                                         <a href="https://github.com/PaulineTaillemite" target="_blank" rel="noopener noreferrer">
                                             <FaGithub className='text-2xl hover:scale-125 cursor-pointer duration-200' />
                                         </a>
-                                        <a href="https://www.linkedin.com/in/pauline-taillemite-%F0%9F%91%A9%F0%9F%8F%BB%E2%80%8D%F0%9F%8E%A4-1aa80a5b/" target="_blank" rel="noopener noreferrer">
+                                        </motion.div>
+
+                                        <motion.div
+                                        variants={container(0.4)}
+                                        initial="hidden"
+                                        whileInView="show">
+                                       <a href="https://www.linkedin.com/in/pauline-taillemite-%F0%9F%91%A9%F0%9F%8F%BB%E2%80%8D%F0%9F%8E%A4-1aa80a5b/" target="_blank" rel="noopener noreferrer">
                                             <FaLinkedinIn className='text-2xl hover:scale-125 cursor-pointer duration-200' />
                                         </a>
+                                        </motion.div>
+
+                                        <motion.div
+                                        variants={container(0.8)}
+                                        initial="hidden"
+                                        whileInView="show">
                                         <a href="https://www.instagram.com/polinetlmt/" target="_blank" rel="noopener noreferrer">
                                             <FaInstagram className='text-2xl hover:scale-125 cursor-pointer duration-200' />
                                         </a>
+                                        </motion.div>
+
+                                        <motion.div
+                                        variants={container(1.0)}
+                                        initial="hidden"
+                                        whileInView="show">
                                         <a href="https://bento.me/pauline-tlmt" target="_blank" rel="noopener noreferrer">
                                             <SiBento className='text-2xl hover:scale-125 cursor-pointer duration-200' />
                                         </a>
+                                        </motion.div>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </main>
         </div>
