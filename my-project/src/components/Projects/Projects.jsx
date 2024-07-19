@@ -4,10 +4,25 @@ import Project1 from '../assets/project1.png'
 import Project2 from '../assets/project2.png'
 import Project3 from '../assets/project3.png'
 
+const fadeUp=(delay)=>({
+    hidden:{
+        opacity:0,
+        y:50,
+    },
+    show:{
+        opacity:1, 
+        y:0,
+        transition:{
+            duration:0.4,
+            delay:delay,
+        },
+    },
+});
+
 const projectList = [
-    { id: 1, title: "Chrome ", img: Project1, link: "#" },
-    { id: 2, title: "Web App Api", img: Project2, link: "#" },
-    { id: 3, title: "Full Stack Project", img: Project3, link: "#" },
+    { id: 1, title: "Chrome ", img: Project1, link: "#", delay:0.2, },
+    { id: 2, title: "Web App Api", img: Project2, link: "#", delay:0.4 },
+    { id: 3, title: "Full Stack Project", img: Project3, link: "#",delay:0.6 },
 ]
 
 const Projects = () => {
