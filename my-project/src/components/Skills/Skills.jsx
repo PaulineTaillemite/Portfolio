@@ -29,7 +29,7 @@ const Skills = () => {
 
        {/*  card section */}
         <div className="container py-10 text-darkcolor">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 place-items-center">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 place-items-center transform -translate-y-20">
 
                 {/* front end section */}
                 <motion.div 
@@ -67,7 +67,7 @@ const Skills = () => {
                     <FaCodepen className='text-4xl' />
                     <div className='space-y-3'>
                         <p className='text-3xl'>Project Design</p>
-                         <p>Lorem ipsum dolor sit.</p> 
+                         
                     </div>
                 </motion.div>
 
@@ -79,7 +79,7 @@ const Skills = () => {
         initial={{opacity:0, scale:0}}
         whileInView={{opacity:1, scale:1, transition:{duration:1.2}}}
         className='container text-darkcolor '>
-            <div className='container py-10  text-6xl gap-5 place-items-center justify-center grid grid-cols-3 md:grid-cols-4 '>
+            <div className='container py-2  text-6xl gap-5 place-items-center justify-center grid grid-cols-3 md:grid-cols-4 '>
                 <FaReact className='hover:rotate-45 duration-200  ' />
                 <IoLogoJavascript className='hover:scale-125 duration-200 ' />
                 <IoLogoHtml5 className='hover:scale-125 duration-200' />
