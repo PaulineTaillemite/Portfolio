@@ -1,26 +1,58 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import Background from './../assets/my2.mp4'
+import Navbar from './../Navbar/Navbar'
+
+const projectList = [
+    { id: 1, title: "Chrome ", img: "#", link: "https://github.com/PaulineTaillemite/SpaceShip-Chrome-Extension", delay: 0.2, },
+    { id: 2, title: "Find Me A Movie ", img: "#", link: "https://github.com/PaulineTaillemite/Projet-collectif-Ada-KoiKonRegarde", delay: 0.2, },
+    { id: 3, title: "Web App Api", img: "#", link: "https://github.com/PaulineTaillemite/My-Weather-App", delay: 0.4 },
+    { id: 4, title: "My Own Unsplash", img: "#", link: "https://github.com/PaulineTaillemite/My-Weather-App", delay: 0.4 },
+    { id: 5, title: "Full Stack Project", img: "#", link: "https://github.com/PaulineTaillemite/vipers-furnitures", delay: 0.6 },
+    { id: 6, title: "The Quack Extension", img: "#", link: "https://github.com/PaulineTaillemite/The-Quack-Extension", delay: 0.6 },
+
+
+]
 
 const myprojects = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-[#9cd4d9]">
-    <motion.div
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.5 }}
-        className="text-center"
-    >
-        <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">Page en Construction</h1>
-        <p className="text-lg md:text-2xl text-gray-600 mb-8">
-            Revenez bientôt !
-        </p>
-        <div className="flex justify-center">
-            <motion.div
-                className="w-16 h-16 border-t-4 border-b-4 border-[#f7b5c0] rounded-full animate-spin"
-            ></motion.div>
-        </div>
-    </motion.div>
-</div>
+    <div >
+         <video
+                    src={Background}
+                    autoPlay
+                    loop
+                    muted
+                    className="w-full h-screen absolute z-[-1] object-cover top-0"
+                />
+
+        <Navbar />  
+
+       {/*  MAPPING THE PROJECTS */}
+       {
+                        projectList.map((project) => {
+                            return (
+                                <motion.div
+                                variants={fadeUp(project.delay)}
+                                initial="hidden"
+                                whileInView={"show"}
+                                    key={project.id}
+                                    className='space-y-4 px-4 items-center justify-center'
+                                >
+
+                                    <a href={project.link} target='blank'>
+                                    <img src={project.img} alt="" className='w-full  hover:scale-110 hover:shadow-lg duration-300' />
+                                    </a>
+
+
+                                    <p className='text-2xl font-semibold'>{project.title}</p>
+                                </motion.div>
+
+                            );
+                        })
+                    }
+
+
+    </div>
   )
 }
 
