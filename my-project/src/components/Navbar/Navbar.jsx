@@ -1,8 +1,9 @@
 import React from 'react';
-import Logo from '../assets/cat_logo.svg';
+import { Link } from 'react-router-dom';
 import Logo2 from '../assets/logo_gurl.svg';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { motion } from "framer-motion";
+
 
 /* ICI LA COMPOSITION DU MENU DE LA NAVBAR */
 
@@ -10,7 +11,7 @@ const NavMenu = [
     {
         id: 1,
         title: "About Me",
-        link: "#",
+        link: "/aboutme",
         delay:0.2,
     },
     {
@@ -71,8 +72,12 @@ const Navbar = () => {
                                     initial="hidden"
                                     whileInView={"show"}
                                     key={item.id}>
-                                    <a href={item.link}
-                                    className='hover:text-primary text-xl font-semibold text-white duration-300'>{item.title}</a>
+
+                                    <Link 
+                                    to={item.link}
+                                    className='hover:text-primary text-xl font-semibold text-white duration-300'>{item.title}</Link>
+
+
                                     </motion.li>
                                     )
                                 })}
