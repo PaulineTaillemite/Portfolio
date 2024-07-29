@@ -47,13 +47,13 @@ const Contact = () => {
                     variants={fadeUp(0.4)}
                     initial="hidden"
                     whileInView={"show"}
-                    className='text-2xl lg:text-3xl'>Put here a catch phrase.</motion.h1>
+                    className='text-2xl lg:text-3xl'>New Skills, Fresh Start.</motion.h1>
 
                     <motion.p 
                     variants={fadeUp(0.6)}
                     initial="hidden"
                     whileInView={"show"}
-                    className='text-sm leading-6 opacity-70'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi cum quidem amet accusantium. Doloremque dignissimos tenetur, maxime laborum odit ipsa laboriosam omnis ducimus deleniti. Ut, officiis minima odio consectetur non aliquid dignissimos similique sapiente. In molestias quisquam quidem accusantium vel animi? Deleniti dicta ut culpa placeat itaque saepe eaque nam?.</motion.p>
+                    className='text-sm leading-6 opacity-70'>After 10 years in the luxury retail sector, as well as founding a feminist artistic agency, I am taking the leap into a new chapter. My passion for design, teamwork, and technology has naturally led me to the path of development. Drawing on my artistic experiences and love for customer experience, I am making a complete career shift, diving headfirst into the world of coding and technology.</motion.p>
 
                     <motion.button 
                     variants={fadeUp(0.8)}
@@ -75,7 +75,7 @@ const Contact = () => {
                     variants={fadeUp(0.6)}
                     initial="hidden"
                     whileInView={"show"}
-                    className='text-sm leading-6 opacity-70'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse iure itaque temporibus animi ducimus, perspiciatis iste vitae dolore harum earum?</motion.p>
+                    className='text-sm leading-6 opacity-70'> Training at <a href='https://adatechschool.fr/"' target="_blank"><strong className='text-xl hover:text-[#f7b5c0] '>Ada Tech School</strong></a>, known for its innovative pedagogy, has led me to a genuine passion for front-end and UX/UI design, while also sparking a keen curiosity for back-end development.</motion.p>
 
                     {/* stacks sections */}
                     <motion.div 
@@ -84,13 +84,13 @@ const Contact = () => {
                     whileInView={"show"}
                     className='grid grid-cols-2 gap-4'>
                     <div className='flex gap-3 items-center'>
-                        <p className='text-6xl font-bold text-[#80dce0]'>2</p>
-                        <p className='font-semibold'>Years of Fullstack Web Development education in Ada Tech School.</p>
+                        <p className='text-6xl font-bold text-[#80dce0]'>9</p>
+                        <p className='font-semibold'>Months of Fullstack Web Development education.</p>
                     </div>
 
                     <div className='flex gap-3 items-center'>
-                        <p className='text-6xl font-bold text-[#80dce0]'>8</p>
-                        <p className='font-semibold'>Completed projects </p>
+                        <p className='text-6xl font-bold text-[#80dce0]'>12</p>
+                        <p className='font-semibold'>Months in apprenticeship </p>
                     </div>
                     </motion.div>
                 </div>

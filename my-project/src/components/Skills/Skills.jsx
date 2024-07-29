@@ -41,7 +41,7 @@ const Skills = () => {
                     <FaReact className='text-4xl' />
                     <div className='space-y-3'>
                         <p className='text-3xl'>Front End</p>
-                        <p>Lorem ipsum dolor sit.</p>
+                        <p>Crafting interfaces</p>
                     </div>
                 </motion.div>
 
@@ -54,7 +54,7 @@ const Skills = () => {
                     <FaServer className='text-4xl' />
                     <div className='space-y-3'>
                         <p className='text-3xl'>Back End</p>
-                        <p>Lorem ipsum dolor sit.</p>
+                        <p>Connecting people & data</p>
                     </div>
                 </motion.div>
 
@@ -67,6 +67,7 @@ const Skills = () => {
                     <FaCodepen className='text-4xl' />
                     <div className='space-y-3'>
                         <p className='text-3xl'>Project Design</p>
+                        <p>From vision to Figma</p>
                          
                     </div>
                 </motion.div>

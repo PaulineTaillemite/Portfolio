@@ -22,9 +22,9 @@ const fadeUp = (delay) => ({
 });
 
 const projectList = [
-    { id: 1, title: "Chrome ", img: Project1, link: "#", delay: 0.2, },
-    { id: 2, title: "Web App Api", img: Project2, link: "#", delay: 0.4 },
-    { id: 3, title: "Full Stack Project", img: Project3, link: "#", delay: 0.6 },
+    { id: 1, title: "Chrome ", img: Project1, link: "https://github.com/PaulineTaillemite/SpaceShip-Chrome-Extension", delay: 0.2, },
+    { id: 2, title: "Web App Api", img: Project2, link: "https://github.com/PaulineTaillemite/My-Weather-App", delay: 0.4 },
+    { id: 3, title: "Full Stack Project", img: Project3, link: "https://github.com/PaulineTaillemite/vipers-furnitures", delay: 0.6 },
 ]
 
 const Projects = () => {
@@ -51,7 +51,7 @@ const Projects = () => {
                         variants={fadeUp(0.6)}
                         initial="hidden"
                         whileInView={"show"}
-                        className='text-sm leading-6 opacity-70'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi cum quidem amet accusantium. Doloremque dignissimos tenetur, maxime laborum odit ipsa laboriosam omnis ducimus deleniti.</motion.p>
+                        className='text-sm leading-6 opacity-70'>Here are some of the group projects and personnal works developped during my Ada Tech School studies. Feel free to ask any questions about the stacks used and processes.</motion.p>
 
                         <motion.button 
                         variants={fadeUp(0.8)}
@@ -73,7 +73,12 @@ const Projects = () => {
                                     key={project.id}
                                     className='space-y-4 px-4 items-center justify-center'
                                 >
+
+                                    <a href={project.link} target='blank'>
                                     <img src={project.img} alt="" className='w-full  hover:scale-110 hover:shadow-lg duration-300' />
+                                    </a>
+
+
                                     <p className='text-2xl font-semibold'>{project.title}</p>
                                 </motion.div>
 

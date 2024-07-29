@@ -139,7 +139,7 @@ const Hero = () => {
                                 variants={container(0.6)}
                                 initial="hidden"
                                 whileInView={"show"}
-                                className='text-sm leading-6 opacity-70'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias id soluta tenetur ut, iste dolores. Dolor sit amet consectetur adipisicing.</motion.p>
+                                className='text-sm leading-6 opacity-90'>Future full-stack developer in training at Ada Tech School in Paris. Passionate about technology, gaining comprehensive skills in both front-end and back-end development. Ready to contribute to innovative projects and collaborate within the tech industry.</motion.p>
 
 
                             <motion.button
