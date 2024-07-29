@@ -11,17 +11,19 @@ import Hobbies from './components/Hobbies/Hobbies';
 import Contactform from './components/ContactForm/Contactform';
 import Footer from './components/Footer/Footer';
 import AboutMe from './components/pages/aboutme'; // Assurez-vous que le chemin est correct
+import MyProjects from './components/pages/myprojects'
 
 
 const App = () => {
   return (
     <Router>
-      <Navbar /> {/* Assurez-vous que Navbar est inclus ici */}
+      {/* Assurez-vous que Navbar est inclus ici */}
       <Routes>
         <Route
           path="/"
           element={
             <main className='overflow-x-hidden'>
+              <Navbar /> 
               <Hero />
               <Contact />
               <Skills />
@@ -33,6 +35,7 @@ const App = () => {
           }
         />
         <Route path="/aboutme" element={<AboutMe />} />
+        <Route path="/myprojects" element={<MyProjects />} />
       </Routes>
     </Router>
   );

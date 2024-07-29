@@ -17,7 +17,7 @@ const NavMenu = [
     {
         id: 2,
         title: "Projects",
-        link: "#",
+        link: "/myprojects",
         delay:0.4,
     },
     {

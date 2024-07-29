@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { FaArrowRight } from 'react-icons/fa'
 import Project1 from '../assets/project1.png'
 import Project2 from '../assets/project2.png'
@@ -53,11 +54,14 @@ const Projects = () => {
                         whileInView={"show"}
                         className='text-sm leading-6 opacity-70'>Here are some of the group projects and personnal works developped during my Ada Tech School studies. Feel free to ask any questions about the stacks used and processes.</motion.p>
 
+
+                        <Link to="/myprojects">
                         <motion.button 
                         variants={fadeUp(0.8)}
                         initial="hidden"
                         whileInView={"show"}
                         className=' border-b-2 border-darkcolor text-xl font-bold p-1 flex items-center gap-4 group' > More Projects {" "} <FaArrowRight className='text-sm group-hover:translate-x-2 transition duration-200' /> </motion.button>
+                        </Link>
 
                     </section>
 
