@@ -8,11 +8,9 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 to do  : 
-changer les couleurs de la DA dans les configs
-checker les configs de responsive
-modifier petit logo navbar
+
+
 modifier font
-modifier image hero et augmenter la taille si possible
 finaliser le burger menu
 renommer composant contact en about me
 revoir centrage 2eme component
@@ -23,3 +21,10 @@ faire le pop up du cv
 voir l'espace blanc entre le hero et le contact ?
 
 1M13 46
+
+to do : 
+configurer le form contact
+finaliser le burger menu
+faire la page project
+faire la page about me
+faire la page send me a message
