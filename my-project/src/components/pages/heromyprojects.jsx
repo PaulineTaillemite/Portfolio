@@ -34,7 +34,7 @@ const Hero = () => {
                     className="w-full h-screen absolute z-[-1] object-cover top-0"
                 />
 
-                <div className=" px-20"> {/* Réduction du padding horizontal du container */}
+                <div className=" container"> {/* Réduction du padding horizontal du container */}
                     <div className=' grid grid-cols-1 md:grid-cols-2 gap-8 min-h-[600px] lg:overflow-y-hidden lg:overflow-x-hidden '> {/* Réduction du gap */}
                         {/* TITLE SECTION */}
                         <div className='grid  relative justify-center items-center'>
@@ -96,7 +96,7 @@ const Hero = () => {
                         </div>
 
                         {/* PRESENTATION SECTION */}
-                        <div className='  justify-start place-content-center space-y-6 md:pr-36'> {/* Réduction de l'espace vertical */}
+                        <div className='  justify-start place-content-center space-y-6 '> {/* Réduction de l'espace vertical */}
                             <motion.p
                                 variants={container(0.2)}
                                 initial="hidden"
