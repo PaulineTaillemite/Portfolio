@@ -7,6 +7,7 @@ import Koikonregarde from './../assets/ProjectPageCarroussel/koikonregarde.png'
 import Weather from './../assets/ProjectPageCarroussel/weather.png'
 import Unsplash from './../assets/ProjectPageCarroussel/unsplash.png'
 import Meuble from './../assets/ProjectPageCarroussel/meuble.png'
+import HeroProject from './../pages/heromyprojects'
 
 const projectList = [
     { id: 1, title: "Chrome ", img: SpaceShip, link: "https://github.com/PaulineTaillemite/SpaceShip-Chrome-Extension", delay: 0.2, },
@@ -19,25 +20,27 @@ const projectList = [
 
 ]
 
-const myprojects = () => {
+const MyProjects = () => {
   return (
     <div >
-         <video
-                    src={Background}
-                    autoPlay
-                    loop
-                    muted
-                    className="w-full h-screen absolute z-[-1] object-cover top-0"
-                />
+      <video
+        src={Background}
+        autoPlay
+        loop
+        muted
+        className="w-full h-screen absolute z-[-1] object-cover top-0"
+      />
 
-        <Navbar />  
-
-       {/*  MAPPING THE PROJECTS */}
- 
+      <Navbar />
+      <HeroProject />
 
 
+      {/* Grid container */}
+
+
+      
     </div>
-  )
-}
+  );
+};
 
-export default myprojects
+export default MyProjects;
