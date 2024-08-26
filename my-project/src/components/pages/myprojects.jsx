@@ -9,9 +9,6 @@ import Meuble from './../assets/ProjectPageCarroussel/meuble.png';
 import HeroProject from './../pages/heromyprojects';
 import Logo from '.././assets/logo_gurl.svg'
 
-
-
-
 import { FaFigma, FaReact, FaServer, FaCodepen, FaPython, FaPhp, FaLaravel, FaGithub, FaSlack } from "react-icons/fa";
 import { IoLogoJavascript, IoLogoHtml5 } from "react-icons/io";
 import { IoLogoCss3 } from "react-icons/io5";
@@ -106,8 +103,8 @@ const MyProjects = () => {
             variants={container2(0.2)}
             initial="hidden"
             whileInView="show"
-            className="items-center justify-center hover:scale-105 duration-500">
-            <div className="mockup-window bg-[#333] border border-[#555] max-w-[600px] mx-auto">
+            className="items-center justify-center ">
+            <div className="mockup-window bg-[#333] border border-[#555] max-w-[600px] mx-auto hover:scale-105 duration-500">
               <div className="absolute left-6 flex space-x-2.5">
                 {/* Petits ronds personnalisés */}
                 <div className="w-3 h-3 rounded-full bg-red-500"></div>
@@ -338,8 +335,8 @@ const MyProjects = () => {
           <motion.div
             variants={container(0.2)}
             initial="hidden"
-            whileInView="show" className="items-center justify-center hover:scale-105 duration-500">
-            <div className="mockup-window bg-[#333] border border-[#555] max-w-[600px] mx-auto">
+            whileInView="show" className="items-center justify-center ">
+            <div className="mockup-window bg-[#333] border border-[#555] max-w-[600px] mx-auto hover:scale-105 duration-500">
               <div className="absolute left-6 flex space-x-2.5">
                 {/* Petits ronds personnalisés */}
                 <div className="w-3 h-3 rounded-full bg-red-500"></div>
@@ -367,8 +364,8 @@ const MyProjects = () => {
             variants={container2(0.2)}
             initial="hidden"
             whileInView="show"
-            className="items-center justify-center hover:scale-105 duration-500">
-            <div className="mockup-window bg-[#333] border border-[#555] max-w-[600px] mx-auto">
+            className="items-center justify-center ">
+            <div className="mockup-window bg-[#333] border border-[#555] max-w-[600px] mx-auto hover:scale-105 duration-500">
               <div className="absolute left-6 flex space-x-2.5">
                 {/* Petits ronds personnalisés */}
                 <div className="w-3 h-3 rounded-full bg-red-500"></div>
@@ -576,8 +573,8 @@ const MyProjects = () => {
             variants={container(0.2)}
             initial="hidden"
             whileInView="show"
-            className="items-center justify-center hover:scale-105 duration-500">
-            <div className="mockup-window bg-[#333] border border-[#555] max-w-[600px] mx-auto">
+            className="items-center justify-center ">
+            <div className="mockup-window bg-[#333] border border-[#555] max-w-[600px] mx-auto hover:scale-105 duration-500">
               <div className="absolute left-6 flex space-x-2.5">
                 {/* Petits ronds personnalisés */}
                 <div className="w-3 h-3 rounded-full bg-red-500"></div>
@@ -602,8 +599,8 @@ const MyProjects = () => {
             variants={container2(0.2)}
             initial="hidden"
             whileInView="show"
-            className="items-center justify-center hover:scale-105 duration-500">
-            <div className="mockup-window bg-[#333] border border-[#555] max-w-[600px] mx-auto">
+            className="items-center justify-center ">
+            <div className="mockup-window bg-[#333] border border-[#555] max-w-[600px] mx-auto hover:scale-105 duration-500">
               <div className="absolute left-6 flex space-x-2.5">
                 {/* Petits ronds personnalisés */}
                 <div className="w-3 h-3 rounded-full bg-red-500"></div>
