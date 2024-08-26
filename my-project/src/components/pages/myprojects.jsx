@@ -42,6 +42,81 @@ const MyProjects = () => {
       <Navbar />
       <HeroProject />
 
+   {/* PROJECT CONTAINER IMAGE LEFT */}
+   <div className=' bg-black text-white  '>
+
+<div className=" container mx-auto  py-2 grid grid-cols-1 md:grid-cols-2 gap-2">
+
+  {/* Image Section */}
+  <div className="items-center justify-center hover:scale-105 duration-500">
+    <div className="mockup-window bg-[#333] border border-[#555] max-w-[600px] mx-auto">
+      <div className="absolute left-6 flex space-x-2.5">
+        {/* Petits ronds personnalisés */}
+        <div className="w-3 h-3 rounded-full bg-red-500"></div>
+        <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+        <div className="w-3 h-3 rounded-full bg-green-500"></div>
+      </div>
+      <div className="bg-[#222] flex justify-center">
+        <img src={Unsplash} alt="Project" className="rounded-lg shadow-lg" />
+      </div>
+    </div>
+  </div>
+
+
+
+
+  {/* Content Section */}
+  <div className="flex flex-col justify-center gap-2">
+
+    {/* Title */}
+
+    <div className="bg-black  py-3 pl-2 text-left">
+      <p className=" text-white text-6xl font-medium  group hover:scale-105 duration-500 tracking-tight  lowercase">My own unsplash</p>
+    </div>
+
+    {/* Main Content */}
+    <div className="flex gap-2">
+      {/* Description */}
+      <div className='flex-1 bg-[#ada2fa] py-3 px-4'>
+
+        <p className="rounded text-black text-m font-normal text-justify ">Developed a personalized web application that mimics the functionality of Unsplash. This app allows users to search for and display images based on their input. It leverages the Unsplash API to fetch and present high-quality images in real-time. </p>
+      </div>
+
+      {/* Stacks and Button */}
+      <div className="flex flex-col justify-between flex-1 gap-2">
+
+        {/* Stacks */}
+        <div className="bg-[#f9ff9e] py-3 px-4 grid grid-cols-2 gap-2 text-5xl place-content-center place-items-center">
+          <IoLogoJavascript className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
+          <IoLogoHtml5 className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
+          <IoLogoCss3 className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
+          <FaGithub className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
+        </div>
+
+        {/* Button */}
+        <div className="bg-[#4a9174]  py-3 px-4 text-center">
+          <button className="relative bg-[#67ab8e] text-[#f9ffa1] text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
+            View Live Demo
+            <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
+          </button>
+        </div>
+
+        <div className="bg-[#e7e3ff]  py-3 px-4 text-center">
+          <button className="relative bg-[#c3b5ff] text-black text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
+            View On GitHub
+            <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+</div>
 
       {/* PROJECT CONTAINER IMAGE RIGHT */}
       <div className=' bg-black text-white  '>
@@ -82,10 +157,10 @@ const MyProjects = () => {
 
                 {/* Stacks */}
                 <div className="bg-[#f9ff9e] py-3 px-4 grid grid-cols-2 gap-2 text-5xl place-content-center place-items-center">
-                  <IoLogoJavascript className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
-                  <IoLogoHtml5 className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
-                  <IoLogoCss3 className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
-                  <FaGithub className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
+                  <FaReact className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
+                  <RiTailwindCssFill className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
+                  <FaPython className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
+                  <DiDjango className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
                 </div>
 
 
@@ -95,7 +170,7 @@ const MyProjects = () => {
               {/* Description */}
               <div className='flex-1 bg-[#ada2fa] py-3 px-4'>
 
-                <p className="rounded text-black text-m font-normal text-justify ">"My Weather App" is an  web application that provides a clear and instant view of weather conditions. By leveraging the Open Weather API, this app displays real-time weather updates and forecasts for any global location. With its user-friendly and responsive interface, it keeps you informed of weather changes wherever you are. </p>
+                <p className="rounded text-black text-m font-normal text-justify ">Web application for furniture sales created collaboratively. The front-end was designed with React and Tailwind for a modern and responsive interface, while the back-end was developed with Django to ensure robust and secure data management. The project was executed using Agile methodology, promoting effective communication and rapid adaptation. </p>
               </div>
 
 
