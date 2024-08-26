@@ -99,7 +99,7 @@ const MyProjects = () => {
       <Navbar />
       <HeroProject />
 
-      {/* PROJECT CONTAINER IMAGE LEFT */}
+      {/* PROJECT UNSPLASH */}
       <div className=' bg-black text-white  '>
         <div className=" container mx-auto  py-2 grid grid-cols-1 md:grid-cols-2 gap-2">
 
@@ -185,13 +185,19 @@ const MyProjects = () => {
                   whileInView="show"
                   className="bg-[#4a9174]  py-3 px-4 text-center">
 
-                  <motion.div
-                    variants={(iconAnimation(0.8))}>
-                    <button className="relative bg-[#67ab8e] text-[#f9ffa1] text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
-                      View Live Demo
-                      <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
-                    </button>
+                  <motion.div variants={iconAnimation(0.8)}>
+                    <a
+                      href="https://my-own-unsplash.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button className="relative bg-[#67ab8e] text-[#f9ffa1] text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
+                        View Live Demo
+                        <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
+                      </button>
+                    </a>
                   </motion.div>
+
 
                 </motion.div>
 
@@ -203,10 +209,15 @@ const MyProjects = () => {
 
                   <motion.div
                     variants={(iconAnimation(1.1))}>
+                    <a href="https://github.com/PaulineTaillemite/My-Own-Unsplash/blob/main/readme.md"
+                    target='_blank'
+                    rel='noopener noreferrer'>
                     <button className="relative bg-[#c3b5ff] text-black text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
                       View On GitHub
                       <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
                     </button>
+                    </a>
+
                   </motion.div>
 
                 </motion.div>
@@ -216,7 +227,7 @@ const MyProjects = () => {
         </div>
       </div>
 
-      {/* PROJECT CONTAINER IMAGE RIGHT */}
+      {/* PROJECT VIPERS */}
       <div className=' bg-black text-white  '>
         <div className=" container mx-auto  py-2 grid grid-cols-1 md:grid-cols-2 gap-2">
 
@@ -249,10 +260,14 @@ const MyProjects = () => {
 
                   <motion.div
                     variants={(iconAnimation2(0.8))}>
+                    <a href="https://github.com/PaulineTaillemite/vipers-furnitures/blob/main/README.md"
+                    target='_blank'>
                     <button className="relative bg-[#67ab8e] text-[#f9ffa1] text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
                       View Live Demo
                       <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
                     </button>
+                    </a>
+
                   </motion.div>
                 </motion.div>
 
@@ -264,10 +279,13 @@ const MyProjects = () => {
 
                   <motion.div
                     variants={iconAnimation2(1)}>
+                      <a href="https://github.com/PaulineTaillemite/vipers-furnitures/blob/main/README.md"
+                    target='_blank'>
                     <button className="relative bg-[#c3b5ff] text-black text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
                       View On GitHub
                       <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
                     </button>
+                    </a>
                   </motion.div>
                 </motion.div>
 
@@ -342,7 +360,7 @@ const MyProjects = () => {
 
       </div>
 
-      {/* PROJECT CONTAINER IMAGE LEFT */}
+      {/* PROJECT SPACESHIP */}
       <div className='bg-black text-white'>
         <div className="container mx-auto py-2 grid grid-cols-1 md:grid-cols-2 gap-2">
 
@@ -423,12 +441,17 @@ const MyProjects = () => {
                   initial="hidden"
                   whileInView="show"
                   className="bg-[#4a9174] py-3 px-4 text-center">
+
                   <motion.div
                     variants={iconAnimation(0.8)}>
+                      <a href="https://space-ship-chrome-extension.vercel.app/"
+                      target='_blank'>
                     <button className="relative bg-[#67ab8e] text-[#f9ffa1] text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
                       View Live Demo
                       <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
                     </button>
+                    </a>
+                    
                   </motion.div>
                 </motion.div>
 
@@ -439,10 +462,13 @@ const MyProjects = () => {
                   className="bg-[#e7e3ff] py-3 px-4 text-center">
                   <motion.div
                     variants={iconAnimation(1.1)}>
+                      <a href="https://github.com/PaulineTaillemite/SpaceShip-Chrome-Extension/blob/main/README.md"
+                      target='_blank'>
                     <button className="relative bg-[#c3b5ff] text-black text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
                       View On GitHub
                       <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
                     </button>
+                    </a>
                   </motion.div>
                 </motion.div>
               </div>
@@ -452,118 +478,124 @@ const MyProjects = () => {
       </div>
 
 
-      {/* PROJECT CONTAINER IMAGE RIGHT */}
+      {/* PROJECT WEATHER APP */}
       <div className=' bg-black text-white  '>
-  <div className="container mx-auto py-2 grid grid-cols-1 md:grid-cols-2 gap-2">
+        <div className="container mx-auto py-2 grid grid-cols-1 md:grid-cols-2 gap-2">
 
-    {/* Content Section */}
-    <div className="flex flex-col justify-center gap-2">
+          {/* Content Section */}
+          <div className="flex flex-col justify-center gap-2">
 
-      {/* Title */}
-      <motion.div
-        variants={container2(0.2)}
-        initial="hidden"
-        whileInView="show"
-        className="bg-black py-3 px-2 text-right">
-        <p className="text-white text-6xl font-medium group hover:scale-105 duration-500 tracking-tight lowercase">my weather app</p>
-      </motion.div>
+            {/* Title */}
+            <motion.div
+              variants={container2(0.2)}
+              initial="hidden"
+              whileInView="show"
+              className="bg-black py-3 px-2 text-right">
+              <p className="text-white text-6xl font-medium group hover:scale-105 duration-500 tracking-tight lowercase">my weather app</p>
+            </motion.div>
 
-      {/* Main Content */}
-      <div className="flex gap-2">
+            {/* Main Content */}
+            <div className="flex gap-2">
 
-        {/* Stacks and Button */}
-        <div className="flex flex-col justify-between flex-1 gap-2">
+              {/* Stacks and Button */}
+              <div className="flex flex-col justify-between flex-1 gap-2">
 
-          {/* Button - View Live Demo */}
+                {/* Button - View Live Demo */}
+                <motion.div
+                  variants={container2(0.5)}
+                  initial="hidden"
+                  whileInView="show"
+                  className="bg-[#4a9174] py-3 px-4 text-center">
+                  <motion.div
+                    variants={iconAnimation2(0.8)}>
+                      <a href="https://my-weather-app-orpin.vercel.app/"
+                      target='_blank'>
+                    <button className="relative bg-[#67ab8e] text-[#f9ffa1] text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
+                      View Live Demo
+                      <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
+                    </button>
+                    </a>
+                  </motion.div>
+                </motion.div>
+
+                {/* Button - View On GitHub */}
+                <motion.div
+                  variants={container2(0.7)}
+                  initial="hidden"
+                  whileInView="show"
+                  className="bg-[#e7e3ff] py-3 px-4 text-center">
+                  <motion.div
+                    variants={iconAnimation2(1)}>
+                      <a href="https://github.com/PaulineTaillemite/My-Weather-App/blob/main/README.md"
+                      target='_blank'>
+                    <button className="relative bg-[#c3b5ff] text-black text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
+                      View On GitHub
+                      <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
+                    </button>
+                    </a>
+                  </motion.div>
+                </motion.div>
+
+                {/* Stacks */}
+                <motion.div
+                  variants={container2(0.9)}
+                  initial="hidden"
+                  whileInView="show"
+                  className="bg-[#f9ff9e] py-3 px-4 grid grid-cols-2 gap-2 text-5xl place-content-center place-items-center">
+                  <motion.div
+                    variants={iconAnimation2(0.8)}>
+                    <IoLogoJavascript className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
+                  </motion.div>
+                  <motion.div
+                    variants={iconAnimation2(1)}>
+                    <IoLogoHtml5 className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
+                  </motion.div>
+                  <motion.div
+                    variants={iconAnimation2(1.2)}>
+                    <IoLogoCss3 className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
+                  </motion.div>
+                  <motion.div
+                    variants={iconAnimation2(1.4)}>
+                    <FaGithub className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
+                  </motion.div>
+                </motion.div>
+              </div>
+
+              {/* Description */}
+              <motion.div
+                variants={container2(0.4)}
+                initial="hidden"
+                whileInView="show"
+                className='flex-1 bg-[#ada2fa] py-3 px-4'>
+                <p className="rounded text-black text-m font-normal text-justify ">"My Weather App" is a web application that provides a clear and instant view of weather conditions. By leveraging the Open Weather API, this app displays real-time weather updates and forecasts for any global location. With its user-friendly and responsive interface, it keeps you informed of weather changes wherever you are.</p>
+              </motion.div>
+
+            </div>
+          </div>
+
+          {/* Image Section */}
           <motion.div
-            variants={container2(0.5)}
+            variants={container(0.2)}
             initial="hidden"
             whileInView="show"
-            className="bg-[#4a9174] py-3 px-4 text-center">
-            <motion.div
-              variants={iconAnimation2(0.8)}>
-              <button className="relative bg-[#67ab8e] text-[#f9ffa1] text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
-                View Live Demo
-                <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
-              </button>
-            </motion.div>
+            className="items-center justify-center hover:scale-105 duration-500">
+            <div className="mockup-window bg-[#333] border border-[#555] max-w-[600px] mx-auto">
+              <div className="absolute left-6 flex space-x-2.5">
+                {/* Petits ronds personnalisés */}
+                <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                <div className="w-3 h-3 rounded-full bg-green-500"></div>
+              </div>
+              <div className="bg-[#222] flex justify-center">
+                <img src={Weather} alt="Project" className="rounded-lg shadow-lg" />
+              </div>
+            </div>
           </motion.div>
 
-          {/* Button - View On GitHub */}
-          <motion.div
-            variants={container2(0.7)}
-            initial="hidden"
-            whileInView="show"
-            className="bg-[#e7e3ff] py-3 px-4 text-center">
-            <motion.div
-              variants={iconAnimation2(1)}>
-              <button className="relative bg-[#c3b5ff] text-black text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
-                View On GitHub
-                <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
-              </button>
-            </motion.div>
-          </motion.div>
-
-          {/* Stacks */}
-          <motion.div
-            variants={container2(0.9)}
-            initial="hidden"
-            whileInView="show"
-            className="bg-[#f9ff9e] py-3 px-4 grid grid-cols-2 gap-2 text-5xl place-content-center place-items-center">
-            <motion.div
-              variants={iconAnimation2(0.8)}>
-              <IoLogoJavascript className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
-            </motion.div>
-            <motion.div
-              variants={iconAnimation2(1)}>
-              <IoLogoHtml5 className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
-            </motion.div>
-            <motion.div
-              variants={iconAnimation2(1.2)}>
-              <IoLogoCss3 className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
-            </motion.div>
-            <motion.div
-              variants={iconAnimation2(1.4)}>
-              <FaGithub className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
-            </motion.div>
-          </motion.div>
         </div>
-
-        {/* Description */}
-        <motion.div
-          variants={container2(0.4)}
-          initial="hidden"
-          whileInView="show"
-          className='flex-1 bg-[#ada2fa] py-3 px-4'>
-          <p className="rounded text-black text-m font-normal text-justify ">"My Weather App" is a web application that provides a clear and instant view of weather conditions. By leveraging the Open Weather API, this app displays real-time weather updates and forecasts for any global location. With its user-friendly and responsive interface, it keeps you informed of weather changes wherever you are.</p>
-        </motion.div>
-
       </div>
-    </div>
 
-    {/* Image Section */}
-    <motion.div
-      variants={container(0.2)}
-      initial="hidden"
-      whileInView="show"
-      className="items-center justify-center hover:scale-105 duration-500">
-      <div className="mockup-window bg-[#333] border border-[#555] max-w-[600px] mx-auto">
-        <div className="absolute left-6 flex space-x-2.5">
-          {/* Petits ronds personnalisés */}
-          <div className="w-3 h-3 rounded-full bg-red-500"></div>
-          <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-          <div className="w-3 h-3 rounded-full bg-green-500"></div>
-        </div>
-        <div className="bg-[#222] flex justify-center">
-          <img src={Weather} alt="Project" className="rounded-lg shadow-lg" />
-        </div>
-      </div>
-    </motion.div>
-
-  </div>
-</div>
-
-      {/* PROJECT CONTAINER IMAGE LEFT */}
+      {/* PROJECT KOIKONREGARDE */}
       <div className='bg-black text-white'>
         <div className="container mx-auto py-2 grid grid-cols-1 md:grid-cols-2 gap-2">
 
@@ -646,10 +678,14 @@ const MyProjects = () => {
                   className="bg-[#4a9174] py-3 px-4 text-center">
                   <motion.div
                     variants={iconAnimation(0.8)}>
+                      <a href="https://find-me-a-movie.vercel.app/"
+                      target='_blank'>
                     <button className="relative bg-[#67ab8e] text-[#f9ffa1] text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
                       View Live Demo
                       <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
                     </button>
+                    </a>
+
                   </motion.div>
                 </motion.div>
 
@@ -660,10 +696,13 @@ const MyProjects = () => {
                   className="bg-[#e7e3ff] py-3 px-4 text-center">
                   <motion.div
                     variants={iconAnimation(1.1)}>
+                      <a href="https://github.com/PaulineTaillemite/Projet-collectif-Ada-KoiKonRegarde"
+                      target='_blank'>
                     <button className="relative bg-[#c3b5ff] text-black text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
                       View On GitHub
                       <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
                     </button>
+                    </a>
                   </motion.div>
                 </motion.div>
 
@@ -675,13 +714,13 @@ const MyProjects = () => {
 
       <div className='bg-black py-14'>
 
-<div className="container flex flex-col gap-3 justify-center items-center">
-  <img src={Logo} alt="" className='w-[150px]' />
-  <p className='text-white text-center text-sm'> Copyright &copy; 2024. All Rights Reserved.</p>
+        <div className="container flex flex-col gap-3 justify-center items-center">
+          <img src={Logo} alt="" className='w-[150px]' />
+          <p className='text-white text-center text-sm'> Copyright &copy; 2024. All Rights Reserved.</p>
 
-</div>
+        </div>
 
-</div>
+      </div>
     </div>
   );
 };
