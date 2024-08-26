@@ -3,7 +3,7 @@ import Logo from '.././assets/logo_gurl.svg'
 
 const Footer = () => {
   return (
-    <div className='bg-darkcolor py-14'>
+    <div className='bg-black py-14'>
 
       <div className="container flex flex-col gap-3 justify-center items-center">
         <img src={Logo} alt="" className='w-[150px]' />
