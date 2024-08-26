@@ -48,8 +48,8 @@ const MyProjects = () => {
         <div className="container mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-2 gap-2">
 
           {/* Image Section */}
-          <div className="items-center justify-center hover:scale-105 duration-500">
-            <div className="mockup-window bg-[#333] border border-[#555]">
+          <div className="items-center justify-center hover:scale-105 duration-500 bg-purple-300">
+            <div className="mockup-window bg-[#333] border border-[#555] max-w-[550px] mx-auto">
               <div className="absolute left-6 flex space-x-2.5">
                 {/* Petits ronds personnalisés */}
                 <div className="w-3 h-3 rounded-full bg-red-500"></div>
