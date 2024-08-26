@@ -43,12 +43,12 @@ const MyProjects = () => {
       <HeroProject />
 
       {/* Grid container */}
-      <div className=' bg-darkcolor text-white  '>
+      <div className=' bg-black text-white  '>
 
         <div className="container mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-2 gap-2">
 
           {/* Image Section */}
-          <div className="flex items-center justify-center hover:scale-105 duration-500 bg-green-400/70 rounded px-2">
+          <div className="flex items-center justify-center hover:scale-105 duration-500 bg-white rounded px-1">
             <img src={SpaceShip} alt="Project" className="rounded-lg shadow-lg max-w-full h-auto" />
           </div>
 
@@ -63,8 +63,8 @@ const MyProjects = () => {
             {/* Main Content */}
             <div className="flex gap-2">
               {/* Description */}
-              <div className='flex-1 bg-blue-300/70 rounded py-3 px-4'>
-                <p className="text-sm opacity-70 tracking-widest text-gray-800">Creation of a browser extension for Google Chrome that sets a new homepage every time a tab is opened. This extension displays a NASA photo along with a description of the image, with all content fetched from the NASA API. Each time a tab is opened, a new image and description are presented. Users can also save the fetched information for later viewing.</p>
+              <div className='flex-1 bg-[#ada2fa] rounded py-3 px-4'>
+                <p className="rounded text-black text-m font-normal text-justify ">Creation of a browser extension for Google Chrome that sets a new homepage every time a tab is opened. This extension displays a NASA photo along with a description of the image, with all content fetched from the NASA API. Each time a tab is opened, a new image and description are presented. Users can also save the fetched information for later viewing.</p>
               </div>
 
               {/* Stacks and Button */}
