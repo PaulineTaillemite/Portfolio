@@ -26,16 +26,9 @@ const Hero = () => {
         <div>
 
             <main className='text-white'>
-                <video
-                    src={backgroundMp42}
-                    autoPlay
-                    loop
-                    muted
-                    className="w-full h-screen absolute z-[-1] object-cover top-0"
-                />
 
-                <div className=" container"> {/* Réduction du padding horizontal du container */}
-                    <div className=' grid grid-cols-1 md:grid-cols-2 gap-8 min-h-[600px] lg:overflow-y-hidden lg:overflow-x-hidden '> {/* Réduction du gap */}
+                <div className="container"> {/* Réduction du padding horizontal du container */}
+                    <div className=' grid grid-cols-1 md:grid-cols-2 gap-8 min-h-[400px] lg:overflow-y-hidden lg:overflow-x-hidden '> {/* Réduction du gap */}
                         {/* TITLE SECTION */}
                         <div className='grid  relative justify-center items-center'>
                             <div className=''>
@@ -51,7 +44,7 @@ const Hero = () => {
                                     variants={container(0.6)}
                                     initial="hidden"
                                     whileInView="show"
-                                    className='h-[4px] w-[30px] bg-darkcolor mt-2 relative z-20'> {/* Réduction du margin-top */}
+                                    className='h-[4px] w-[30px] bg-red-200 mt-2 relative z-20'> {/* Réduction du margin-top */}
                                 </motion.div>
 
                                 {/* Social media section */}
@@ -121,15 +114,6 @@ const Hero = () => {
                                 Explore a collection of my recent projects, demonstrating my skills in full-stack development. Each project is a testament to my dedication to crafting innovative and efficient solutions.
                             </motion.p>
 
-                            <Link to="/projects">
-                            <motion.button
-                                variants={container(0.8)}
-                                initial="hidden"
-                                whileInView={"show"}
-                                className='text-darkcolor border-b-2 border-darkcolor text-xl font-bold p-1 flex items-center gap-4 group'>
-                                View Projects <FaArrowRight className='text-sm group-hover:translate-x-2 transition duration-200' />
-                            </motion.button>
-                            </Link>
 
                         </div>
                     </div>
