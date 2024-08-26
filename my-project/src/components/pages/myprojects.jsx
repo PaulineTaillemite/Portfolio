@@ -48,8 +48,8 @@ const MyProjects = () => {
         <div className="container mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-2 gap-2">
 
           {/* Image Section */}
-          <div className="items-center justify-center hover:scale-105 duration-500 bg-purple-300">
-            <div className="mockup-window bg-[#333] border border-[#555] max-w-[550px] mx-auto">
+          <div className="items-center justify-center hover:scale-105 duration-500">
+            <div className="mockup-window bg-[#333] border border-[#555] max-w-[600px] mx-auto">
               <div className="absolute left-6 flex space-x-2.5">
                 {/* Petits ronds personnalisés */}
                 <div className="w-3 h-3 rounded-full bg-red-500"></div>
@@ -69,14 +69,15 @@ const MyProjects = () => {
           <div className="flex flex-col justify-center gap-2">
 
             {/* Title */}
-            <div className='bg-[#e07595]/70 rounded py-2 px-4'>
-              <p className="text-2xl lg:text-3xl uppercase font-thin text-white">Enter the SpaceShip</p>
-            </div>
+            <div className="bg-[#f5d5ee]  py-3 px-4 text-center">              
+              <p className="relative bg-[#c5b5ff] text-darkcolor text-4xl font-medium p-2 flex items-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl max-w-[350px] lowercase">Enter the SpaceShip</p>
+            </div> 
 
             {/* Main Content */}
             <div className="flex gap-2">
               {/* Description */}
-              <div className='flex-1 bg-[#ada2fa] rounded py-3 px-4'>
+              <div className='flex-1 bg-[#ada2fa] py-3 px-4'>
+            
                 <p className="rounded text-black text-m font-normal text-justify ">Creation of a browser extension for Google Chrome that sets a new homepage every time a tab is opened. This extension displays a NASA photo along with a description of the image, with all content fetched from the NASA API. Each time a tab is opened, a new image and description are presented. Users can also save the fetched information for later viewing.</p>
               </div>
 
@@ -84,11 +85,11 @@ const MyProjects = () => {
               <div className="flex flex-col justify-between flex-1 gap-2">
 
                 {/* Stacks */}
-                <div className="bg-red-200/70 rounded py-3 px-4 grid grid-cols-2 gap-2 text-5xl place-content-center place-items-center">
-                  <IoLogoJavascript className="hover:scale-125 transition-transform duration-200 text-white" />
-                  <IoLogoHtml5 className="hover:scale-125 transition-transform duration-200 text-white" />
-                  <IoLogoCss3 className="hover:scale-125 transition-transform duration-200 text-white" />
-                  <FaGithub className="hover:scale-125 transition-transform duration-200 text-white" />
+                <div className="bg-[#f9ff9e] py-3 px-4 grid grid-cols-2 gap-2 text-5xl place-content-center place-items-center">
+                  <IoLogoJavascript className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
+                  <IoLogoHtml5 className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
+                  <IoLogoCss3 className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
+                  <FaGithub className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
                 </div>
 
                 {/* Button */}
