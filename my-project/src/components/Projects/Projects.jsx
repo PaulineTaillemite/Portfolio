@@ -30,7 +30,7 @@ const projectList = [
 
 const Projects = () => {
     return (
-        <div className='bg-[#9cd4d9] py-20 text-darkcolor '>
+        <div className='bg-[#9cd4d9] py-20 text-black '>
 
             <div className="container  ">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 items-center gap-4">
@@ -60,7 +60,7 @@ const Projects = () => {
                         variants={fadeUp(0.8)}
                         initial="hidden"
                         whileInView={"show"}
-                        className=' border-b-2 border-darkcolor text-xl font-bold p-1 flex items-center gap-4 group' > More Projects {" "} <FaArrowRight className='text-sm group-hover:translate-x-2 transition duration-200' /> </motion.button>
+                        className=' border-b-2 border-darkcolor text-xl font-bold p-1 flex items-center gap-4 group' > See all projects {" "} <FaArrowRight className='text-sm group-hover:translate-x-2 transition duration-200' /> </motion.button>
                         </Link>
 
                     </section>

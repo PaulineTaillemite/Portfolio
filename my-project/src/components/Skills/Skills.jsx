@@ -28,7 +28,7 @@ const Skills = () => {
     <div className='bg-[#9cd4d9]'>
 
        {/*  card section */}
-        <div className="container py-10 text-darkcolor">
+        <div className="container py-10 text-black">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 place-items-center transform -translate-y-20">
 
                 {/* front end section */}

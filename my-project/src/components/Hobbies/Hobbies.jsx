@@ -25,7 +25,7 @@ const hobbiesList = [
 const Hobbies = () => {
   return (
     <div>
-      <main className="bg-darkcolor text-white py-16">
+      <main className="bg-black text-white py-16">
         <div className="container">
           <section className="lg:max-w-[500px] ml-auto lg:text-right">
             <div className="space-y-5 pb-10">

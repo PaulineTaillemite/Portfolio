@@ -30,7 +30,7 @@ const Contact = () => {
   };
 
   return (
-    <main className='bg-darkcolor text-white '>
+    <main className='bg-black text-white '>
         
         <div className="container py-10 lg:py-20 ">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 place-items-center">
