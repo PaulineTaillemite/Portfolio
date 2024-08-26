@@ -23,7 +23,7 @@ const NavMenu = [
     {
         id: 3,
         title: "Send Me a Message",
-        link: "#",
+        link: "mailto:pauline.taillemite@gmail.com",
         delay:0.6,
     }
 ]

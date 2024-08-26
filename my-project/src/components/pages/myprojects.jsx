@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import Background from './../assets/my2.mp4';
 import Navbar from './../Navbar/Navbar';
 import SpaceShip from './../assets/ProjectPageCarroussel/spaceship.png';
 import Koikonregarde from './../assets/ProjectPageCarroussel/koikonregarde.png';
@@ -18,7 +17,6 @@ import { IoLogoJavascript, IoLogoHtml5 } from "react-icons/io";
 import { IoLogoCss3 } from "react-icons/io5";
 import { RiTailwindCssFill, RiNotionFill } from "react-icons/ri";
 import { DiDjango } from "react-icons/di";
-import { SiAsana, } from "react-icons/si";
 import { FaArrowRight, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 // Fonction pour gérer les animations avec framer-motion
