@@ -48,9 +48,22 @@ const MyProjects = () => {
         <div className="container mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-2 gap-2">
 
           {/* Image Section */}
-          <div className="flex items-center justify-center hover:scale-105 duration-500 bg-white rounded px-1">
-            <img src={SpaceShip} alt="Project" className="rounded-lg shadow-lg max-w-full h-auto" />
+          <div className="items-center justify-center hover:scale-105 duration-500">
+            <div className="mockup-window bg-[#333] border border-[#555]">
+              <div className="absolute left-6 flex space-x-2.5">
+                {/* Petits ronds personnalisés */}
+                <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                <div className="w-3 h-3 rounded-full bg-green-500"></div>
+              </div>
+              <div className="bg-[#222] flex justify-center">
+                <img src={SpaceShip} alt="Project" className="rounded-lg shadow-lg" />
+              </div>
+            </div>
           </div>
+
+
+
 
           {/* Content Section */}
           <div className="flex flex-col justify-center gap-2">
@@ -87,7 +100,7 @@ const MyProjects = () => {
                 </div>
 
                 <div className="bg-[#e7e3ff]  py-3 px-4 text-center">
-                <button className="relative bg-[#c3b5ff] text-black text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
+                  <button className="relative bg-[#c3b5ff] text-black text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
                     View On GitHub
                     <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
                   </button>
