@@ -133,7 +133,7 @@ const Hero = () => {
                                 Future full-stack developer in training at Ada Tech School in Paris. Passionate about technology, gaining comprehensive skills in both front-end and back-end development. Ready to contribute to innovative projects and collaborate within the tech industry.
                             </motion.p>
 
-                            <Link to="/aboutme">
+                            <Link to="/">
                             <motion.button
                                 variants={container(0.8)}
                                 initial="hidden"
