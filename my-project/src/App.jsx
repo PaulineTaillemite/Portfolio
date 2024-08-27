@@ -1,5 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
+
 
 // Importez les composants
 import Navbar from './components/Navbar/Navbar'; // Assurez-vous d'importer votre Navbar ici
@@ -17,6 +19,7 @@ import MyProjects from './components/pages/myprojects'
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />
       {/* Assurez-vous que Navbar est inclus ici */}
       <Routes>
         <Route
