@@ -11,7 +11,7 @@ const NavMenu = [
     {
         id: 1,
         title: "About Me",
-        link: "/aboutme",
+        link: "/",
         delay:0.2,
     },
     {
