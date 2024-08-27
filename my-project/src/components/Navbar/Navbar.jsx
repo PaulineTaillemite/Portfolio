@@ -1,16 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo2 from '../assets/logo_gurl.svg';
-import { GiHamburgerMenu } from "react-icons/gi";
 import { motion } from "framer-motion";
-
 
 /* ICI LA COMPOSITION DU MENU DE LA NAVBAR */
 
 const NavMenu = [
     {
         id: 1,
-        title: "About Me",
+        title: "Home",
         link: "/",
         delay:0.2,
     },
@@ -27,7 +25,6 @@ const NavMenu = [
         delay:0.6,
     }
 ]
-
 
 const container = (delay) => ({
     hidden: {
@@ -49,46 +46,38 @@ const container = (delay) => ({
 const Navbar = () => {
     return (
         <div>
-
-            <div className='py-6 text-white'>
+            <div className='sm:py-0 md:py-6 lg:py-6 text-white'>
                 <div className="container flex justify-between items-center ">
-
                     {/* Logo section */}
-                    <div><motion.img 
-                    initial={{opacity:0, scale:0}}
-                    whileInView={{opacity:1, scale:1}}
-                    
-                    src={Logo2} alt="" className=''/></div>
-
-
+                    <div>
+                        <motion.img 
+                            initial={{opacity:0, scale:0}}
+                            whileInView={{opacity:1, scale:1}}
+                            src={Logo2} 
+                            alt="" 
+                            className='' 
+                        />
+                    </div>
 
                     {/*  Navbar Menu mapping du Navbar Tableau d'objet*/}
-                    <div>
-                        <ul className='hidden md:flex justify-center gap-10 p-9 '>
-                            {NavMenu.map((item) => {
-                                return(
-                                    <motion.li 
+                    <div className='w-full flex justify-end'>
+                        <ul className='flex justify-center gap-10 p-5 '>
+                            {NavMenu.map((item) => (
+                                <motion.li 
                                     variants={container(item.delay)}
                                     initial="hidden"
                                     whileInView={"show"}
-                                    key={item.id}>
-
+                                    key={item.id}
+                                >
                                     <Link 
-                                    to={item.link}
-                                    className='hover:text-primary text-xl font-semibold text-white duration-300'>{item.title}</Link>
-
-
-                                    </motion.li>
-                                    )
-                                })}
+                                        to={item.link}
+                                        className='text-sm md:text-xl font-semibold text-white hover:text-primary duration-300'
+                                    >
+                                        {item.title}
+                                    </Link>
+                                </motion.li>
+                            ))}
                         </ul>
-
-                        {/* mobile hamburger */}
-                        <div className='md:hidden'>
-                            <GiHamburgerMenu className='text-3xl'/>
-                        </div>
-
-
                     </div>
                 </div>
             </div>
@@ -96,4 +85,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default Navbar;
