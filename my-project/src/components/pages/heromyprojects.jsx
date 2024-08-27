@@ -30,13 +30,13 @@ const Hero = () => {
                 <div className="container"> {/* Réduction du padding horizontal du container */}
                     <div className=' grid grid-cols-1 md:grid-cols-2 gap-8 min-h-[400px] lg:overflow-y-hidden lg:overflow-x-hidden '> {/* Réduction du gap */}
                         {/* TITLE SECTION */}
-                        <div className='grid  relative justify-center items-center'>
+                        <div className=' container grid  relative justify-start items-center'>
                             <div className=''>
                                 <motion.h1
                                     variants={container(0.2)}
                                     initial="hidden"
                                     whileInView="show"
-                                    className='text-4xl md:text-8xl font-bold relative z-20'>
+                                    className='text-6xl md:text-6xl lg:text-8xl font-bold relative z-20'>
                                     WORKS <br /> & PROJECTS
                                 </motion.h1>
 
