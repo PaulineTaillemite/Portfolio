@@ -32,7 +32,7 @@ const Hero = () => {
                     autoPlay
                     loop
                     muted
-                    className="w-full h-screen absolute z-[-1] object-cover top-0"
+                    className="w-full h-screen absolute z-[-1] object-cover top-0 md:block"
                 />
 
                 <div className="container">
