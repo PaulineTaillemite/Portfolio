@@ -27,10 +27,13 @@ const Hobbies = () => {
     <div>
       <main className="bg-black text-white py-16">
         <div className="container">
-          <section className="lg:max-w-[500px] ml-auto lg:text-right">
+          <section className="lg:max-w-[1000px] ml-auto lg:text-right">
             <div className="space-y-5 pb-10">
               <p className="text-sm opacity-70 tracking-widest transform translate-y-3">- Hobbies</p>
               <h1 className="text-2xl lg:text-3xl">More about what's in my mind.</h1>
+              <p className='text-sm leading-6 opacity-90'>
+              When I'm not immersed in re-coding the world, you’ll often find me savoring bao buns with my daughter during the day, sharing laughter and creating memories. As the evening sets in, I switch gears and dive into epic battles on my PS5, where I take on the dark forces with unwavering determination. It’s a balance of indulgence and adventure, where family time and gaming each have their place.
+              </p>
             </div>
           </section>
 
