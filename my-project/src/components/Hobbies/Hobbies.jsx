@@ -1,4 +1,6 @@
 import React from 'react';
+import Flicking from "@egjs/react-flicking";
+import "@egjs/react-flicking/dist/flicking.css";
 
 import Img1 from '.././assets/carousseltest2/img1.jpg';
 import Img2 from '.././assets/carousseltest2/img2.jpg';
@@ -37,17 +39,17 @@ const Hobbies = () => {
             </div>
           </section>
 
-          <div className="carousel carousel-center rounded-box">
-            {hobbiesList.map((hobby) => (
-              <div key={hobby.id} className="carousel-item relative group">
-                <img src={hobby.img} alt={hobby.title} className="h-128 w-auto object-cover group-hover:blur-sm transition duration-300" />
-
+          <Flicking circular={true} className="rounded-box">
+            {hobbiesList.map((hobby, index) => (
+              <div key={hobby.id} className="grid-panel relative group flex justify-center items-center">
+                <img src={hobby.img} alt={hobby.title} className="h-96 w-96 object-cover group-hover:blur-sm transition duration-300" />
+                
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <p className="text-white/60 text-center lowercase font-medium text-4xl px-2 py-1">{hobby.text}</p>
                 </div>
               </div>
             ))}
-          </div>
+          </Flicking>
         </div>
       </main>
     </div>
