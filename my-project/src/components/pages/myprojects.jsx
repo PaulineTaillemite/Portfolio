@@ -95,42 +95,39 @@ const MyProjects = () => {
       <HeroProject />
 
       {/* PROJECT UNSPLASH */}
-      <div className=' bg-black text-white  '>
-        <div className=" container mx-auto  py-2 grid grid-cols-1 md:grid-cols-2 gap-2">
+      <div className='bg-black text-white'>
+        <div className="container mx-auto pt-24 px-4 sm:px-6 md:px-8 lg:px-10 grid grid-cols-1 md:grid-cols-2 gap-4">
 
           {/* Image */}
           <motion.div
             variants={container2(0.2)}
             initial="hidden"
             whileInView="show"
-            className="items-center justify-center ">
-            <div className="mockup-window bg-[#333] border border-[#555] max-w-[600px] mx-auto hover:scale-105 duration-500">
-              <div className="absolute left-6 flex space-x-2.5">
-                {/* Petits ronds personnalisés */}
-                <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-                <div className="w-3 h-3 rounded-full bg-green-500"></div>
-              </div>
+            className="flex items-center justify-center">
+            <div className="mockup-window bg-[#333] border border-[#555] max-w-full w-full mx-auto hover:scale-105 duration-500">
+
               <div className="bg-[#222] flex justify-center">
-                <img src={Unsplash} alt="Project" className="rounded-lg shadow-lg" />
+                <img src={Unsplash} alt="Project" className="rounded-lg shadow-lg w-full" />
               </div>
             </div>
           </motion.div>
 
           {/* Content Section */}
-          <div className="flex flex-col justify-center gap-2">
+          <div className="flex flex-col justify-center gap-4">
 
             {/* Titre du projet */}
             <motion.div
               variants={container(0.2)}
               initial="hidden"
               whileInView="show"
-              className="bg-black  py-3 pl-2 text-left">
-              <p className=" text-white text-6xl font-medium  group hover:scale-105 duration-500 tracking-tight  lowercase">My own unsplash</p>
+              className="bg-black py-3 pl-2 text-left">
+              <p className="text-white text-5xl sm:text-6xl md:text-6xl font-medium group hover:scale-105 duration-500 tracking-tight lowercase">
+                My own unsplash
+              </p>
             </motion.div>
 
             {/* Main Content */}
-            <div className="flex gap-2">
+            <div className="flex flex-col md:flex-row gap-4">
 
               {/* Description */}
               <motion.div
@@ -138,84 +135,66 @@ const MyProjects = () => {
                 initial="hidden"
                 whileInView="show"
                 className='flex-1 bg-[#ada2fa] py-3 px-4'>
-
-                <p className="rounded text-black text-m font-normal text-justify ">Developed a personalized web application that mimics the functionality of Unsplash. This app allows users to search for and display images based on their input. It leverages the Unsplash API to fetch and present high-quality images in real-time. </p>
+                <p className="rounded text-black text-base md:text-lg font-normal text-justify">
+                  Developed a personalized web application that mimics the functionality of Unsplash. This app allows users to search for and display images based on their input. It leverages the Unsplash API to fetch and present high-quality images in real-time.
+                </p>
               </motion.div>
 
               {/* Stacks and Button */}
-              <div className="flex flex-col justify-between flex-1 gap-2">
+              <div className="flex flex-col justify-between flex-1 gap-4">
 
                 {/* Stacks */}
                 <motion.div
                   variants={container(0.5)}
                   initial="hidden"
                   whileInView="show"
-                  className="bg-[#f9ff9e] py-3 px-4 grid grid-cols-2 gap-2 text-5xl place-content-center place-items-center">
-
-                  <motion.div
-                    variants={(iconAnimation(0.8))}>
+                  className="bg-[#f9ff9e] py-3 px-4 grid grid-cols-2 gap-4 text-4xl sm:text-5xl place-content-center place-items-center">
+                  <motion.div variants={iconAnimation(0.8)}>
                     <IoLogoJavascript className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
                   </motion.div>
-
-                  <motion.div
-                    variants={(iconAnimation(1))}>
+                  <motion.div variants={iconAnimation(1)}>
                     <IoLogoHtml5 className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
                   </motion.div>
-
-                  <motion.div
-                    variants={(iconAnimation(1.2))}>
+                  <motion.div variants={iconAnimation(1.2)}>
                     <IoLogoCss3 className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
                   </motion.div>
-
-                  <motion.div
-                    variants={(iconAnimation(1.4))}>
+                  <motion.div variants={iconAnimation(1.4)}>
                     <FaGithub className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
                   </motion.div>
                 </motion.div>
 
                 {/* Button */}
-                <motion.div
-                  variants={container(0.7)}
-                  initial="hidden"
-                  whileInView="show"
-                  className="bg-[#4a9174]  py-3 px-4 text-center">
-
-                  <motion.div variants={iconAnimation(0.8)}>
-                    <a
-                      href="https://my-own-unsplash.vercel.app/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <button className="relative bg-[#67ab8e] text-[#f9ffa1] text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
-                        View Live Demo
-                        <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
-                      </button>
-                    </a>
+                <div className="flex flex-col gap-4">
+                  <motion.div
+                    variants={container(0.7)}
+                    initial="hidden"
+                    whileInView="show"
+                    className="bg-[#4a9174] py-3 px-4 text-center">
+                    <motion.div variants={iconAnimation(0.8)}>
+                      <a href="https://my-own-unsplash.vercel.app/" target="_blank" rel="noopener noreferrer">
+                        <button className="relative bg-[#67ab8e] text-[#f9ffa1] text-lg md:text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
+                          View Live Demo
+                          <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
+                        </button>
+                      </a>
+                    </motion.div>
                   </motion.div>
-
-
-                </motion.div>
-
-                <motion.div
-                  variants={container(0.9)}
-                  initial="hidden"
-                  whileInView="show"
-                  className="bg-[#e7e3ff]  py-3 px-4 text-center">
 
                   <motion.div
-                    variants={(iconAnimation(1.1))}>
-                    <a href="https://github.com/PaulineTaillemite/My-Own-Unsplash/blob/main/readme.md"
-                    target='_blank'
-                    rel='noopener noreferrer'>
-                    <button className="relative bg-[#c3b5ff] text-black text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
-                      View On GitHub
-                      <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
-                    </button>
-                    </a>
-
+                    variants={container(0.9)}
+                    initial="hidden"
+                    whileInView="show"
+                    className="bg-[#e7e3ff] py-3 px-4 text-center">
+                    <motion.div variants={iconAnimation(1.1)}>
+                      <a href="https://github.com/PaulineTaillemite/My-Own-Unsplash/blob/main/readme.md" target='_blank' rel='noopener noreferrer'>
+                        <button className="relative bg-[#c3b5ff] text-black text-lg md:text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
+                          View On GitHub
+                          <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
+                        </button>
+                      </a>
+                    </motion.div>
                   </motion.div>
-
-                </motion.div>
+                </div>
               </div>
             </div>
           </div>
@@ -223,98 +202,24 @@ const MyProjects = () => {
       </div>
 
       {/* PROJECT VIPERS */}
-      <div className=' bg-black text-white  '>
-        <div className=" container mx-auto  py-2 grid grid-cols-1 md:grid-cols-2 gap-2">
-
+      <div className='bg-black text-white'>
+        <div className="container mx-auto pt-24 px-4 sm:px-6 md:px-8 lg:px-10 grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* Content Section */}
-          <div className="flex flex-col justify-center gap-2">
-
+          <div className="flex flex-col justify-center gap-4">
 
             {/* Title */}
             <motion.div
               variants={container2(0.2)}
               initial="hidden"
               whileInView="show"
-              className="bg-black  py-3 px-2 text-right">
-              <p className=" text-white text-6xl font-medium  group hover:scale-105 duration-500 tracking-tight  lowercase">furnitures website</p>
+              className="bg-black py-3 px-2 text-right md:text-right">
+              <p className="text-white text-5xl sm:text-6xl md:text-6xl  font-medium group hover:scale-105 duration-500 tracking-tight lowercase">
+                Furnitures Website
+              </p>
             </motion.div>
 
-
             {/* Main Content */}
-            <div className="flex gap-2">
-
-              {/* Stacks and Button */}
-              <div className="flex flex-col justify-between flex-1 gap-2">
-
-                {/* Button */}
-                <motion.div
-                  variants={container2(0.5)}
-                  initial="hidden"
-                  whileInView="show"
-                  className="bg-[#4a9174]  py-3 px-4 text-center">
-
-                  <motion.div
-                    variants={(iconAnimation2(0.8))}>
-                    <a href="https://github.com/PaulineTaillemite/vipers-furnitures/blob/main/README.md"
-                    target='_blank'>
-                    <button className="relative bg-[#67ab8e] text-[#f9ffa1] text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
-                      View Live Demo
-                      <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
-                    </button>
-                    </a>
-
-                  </motion.div>
-                </motion.div>
-
-                <motion.div
-                  variants={container2(0.7)}
-                  initial="hidden"
-                  whileInView="show"
-                  className="bg-[#e7e3ff] py-3 px-4 text-center">
-
-                  <motion.div
-                    variants={iconAnimation2(1)}>
-                      <a href="https://github.com/PaulineTaillemite/vipers-furnitures/blob/main/README.md"
-                    target='_blank'>
-                    <button className="relative bg-[#c3b5ff] text-black text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
-                      View On GitHub
-                      <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
-                    </button>
-                    </a>
-                  </motion.div>
-                </motion.div>
-
-
-                {/* Stacks */}
-
-                <motion.div
-                  variants={container2(0.9)}
-                  initial="hidden"
-                  whileInView="show"
-                  className="bg-[#f9ff9e] py-3 px-4 grid grid-cols-2 gap-2 text-5xl place-content-center place-items-center">
-
-                  <motion.div
-                    variants={(iconAnimation2(0.8))}>
-                    <FaReact className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
-                  </motion.div>
-
-                  <motion.div
-                    variants={(iconAnimation2(1))}>
-                    <RiTailwindCssFill className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
-                  </motion.div>
-
-                  <motion.div
-                    variants={(iconAnimation2(1.2))}>
-                    <FaPython className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
-                  </motion.div>
-
-                  <motion.div
-                    variants={(iconAnimation2(1.4))}>
-                    <DiDjango className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
-                  </motion.div>
-                </motion.div>
-              </div>
-
+            <div className="flex flex-col md:flex-row gap-4">
 
               {/* Description */}
               <motion.div
@@ -322,155 +227,195 @@ const MyProjects = () => {
                 initial="hidden"
                 whileInView="show"
                 className='flex-1 bg-[#ada2fa] py-3 px-4'>
-
-                <p className="rounded text-black text-m font-normal text-justify ">Web application for furniture sales created collaboratively. The front-end was designed with React and Tailwind for a modern and responsive interface, while the back-end was developed with Django to ensure robust and secure data management. The project was executed using Agile methodology, promoting effective communication and rapid adaptation. </p>
+                <p className="rounded text-black text-base md:text-lg font-normal text-justify">
+                  Web application for furniture sales created collaboratively. The front-end was designed with React and Tailwind for a modern and responsive interface, while the back-end was developed with Django to ensure robust and secure data management. The project was executed using Agile methodology, promoting effective communication and rapid adaptation.
+                </p>
               </motion.div>
 
+              {/* Stacks and Button */}
+              <div className="flex flex-col justify-between flex-1 gap-4">
 
+                {/* Stacks */}
+                <motion.div
+                  variants={container2(0.9)}
+                  initial="hidden"
+                  whileInView="show"
+                  className="bg-[#f9ff9e] py-3 px-4 grid grid-cols-2 gap-4 text-4xl sm:text-5xl place-content-center place-items-center">
+                  <motion.div variants={iconAnimation2(0.8)}>
+                    <FaReact className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
+                  </motion.div>
+                  <motion.div variants={iconAnimation2(1)}>
+                    <RiTailwindCssFill className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
+                  </motion.div>
+                  <motion.div variants={iconAnimation2(1.2)}>
+                    <FaPython className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
+                  </motion.div>
+                  <motion.div variants={iconAnimation2(1.4)}>
+                    <DiDjango className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
+                  </motion.div>
+                </motion.div>
+
+                {/* Buttons */}
+                <div className="flex flex-col gap-4">
+                  <motion.div
+                    variants={container2(0.5)}
+                    initial="hidden"
+                    whileInView="show"
+                    className="bg-[#4a9174] py-3 px-4 text-center">
+                    <motion.div variants={iconAnimation2(0.8)}>
+                      <a href="https://github.com/PaulineTaillemite/vipers-furnitures/blob/main/README.md" target='_blank' rel='noopener noreferrer'>
+                        <button className="relative bg-[#67ab8e] text-[#f9ffa1] text-lg md:text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
+                          View Live Demo
+                          <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
+                        </button>
+                      </a>
+                    </motion.div>
+                  </motion.div>
+
+                  <motion.div
+                    variants={container2(0.7)}
+                    initial="hidden"
+                    whileInView="show"
+                    className="bg-[#e7e3ff] py-3 px-4 text-center">
+                    <motion.div variants={iconAnimation2(1)}>
+                      <a href="https://github.com/PaulineTaillemite/vipers-furnitures/blob/main/README.md" target='_blank' rel='noopener noreferrer'>
+                        <button className="relative bg-[#c3b5ff] text-black text-lg md:text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
+                          View On GitHub
+                          <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
+                        </button>
+                      </a>
+                    </motion.div>
+                  </motion.div>
+                </div>
+              </div>
             </div>
           </div>
-
 
           {/* Image Section */}
           <motion.div
             variants={container(0.2)}
             initial="hidden"
-            whileInView="show" className="items-center justify-center ">
-            <div className="mockup-window bg-[#333] border border-[#555] max-w-[600px] mx-auto hover:scale-105 duration-500">
-              <div className="absolute left-6 flex space-x-2.5">
-                {/* Petits ronds personnalisés */}
-                <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-                <div className="w-3 h-3 rounded-full bg-green-500"></div>
-              </div>
+            whileInView="show"
+            className="flex items-center justify-center">
+            <div className="mockup-window bg-[#333] border border-[#555] max-w-full mx-auto hover:scale-105 duration-500">
+
               <div className="bg-[#222] flex justify-center">
-                <img src={Meuble} alt="Project" className="rounded-lg shadow-lg " />
+                <img src={Meuble} alt="Project" className="rounded-lg shadow-lg w-full" />
               </div>
             </div>
           </motion.div>
-
-
         </div>
-
-
       </div>
+
 
       {/* PROJECT SPACESHIP */}
       <div className='bg-black text-white'>
-        <div className="container mx-auto py-2 grid grid-cols-1 md:grid-cols-2 gap-2">
+        <div className="container mx-auto pt-36 px-4 sm:px-6 md:px-8 lg:px-10 grid grid-cols-1 md:grid-cols-2 gap-4">
 
           {/* Image Section */}
           <motion.div
             variants={container2(0.2)}
             initial="hidden"
             whileInView="show"
-            className="items-center justify-center ">
-            <div className="mockup-window bg-[#333] border border-[#555] max-w-[600px] mx-auto hover:scale-105 duration-500">
-              <div className="absolute left-6 flex space-x-2.5">
-                {/* Petits ronds personnalisés */}
-                <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-                <div className="w-3 h-3 rounded-full bg-green-500"></div>
-              </div>
+            className="flex items-center justify-center">
+            <div className="mockup-window bg-[#333] border border-[#555] max-w-full w-full mx-auto hover:scale-105 duration-500">
               <div className="bg-[#222] flex justify-center">
-                <img src={SpaceShip} alt="Project" className="rounded-lg shadow-lg" />
+                <img src={SpaceShip} alt="Project" className="rounded-lg shadow-lg w-full" />
               </div>
             </div>
           </motion.div>
 
           {/* Content Section */}
-          <div className="flex flex-col justify-center gap-2">
+          <div className="flex flex-col justify-center gap-4">
 
             {/* Title */}
             <motion.div
               variants={container(0.2)}
               initial="hidden"
               whileInView="show"
-              className="bg-black py-3 pl-2 text-left">
-              <p className="text-white text-6xl font-medium group hover:scale-105 duration-500 tracking-tight lowercase">Enter the SpaceShip</p>
+              className="bg-black py-3 px-4 text-left">
+              <p className="text-white text-5xl sm:text-6xl md:text-6xl  font-medium group hover:scale-105 duration-500 tracking-tight lowercase">
+                Enter the SpaceShip
+              </p>
             </motion.div>
 
             {/* Main Content */}
-            <div className="flex gap-2">
+            <div className="flex flex-col md:flex-row gap-4">
+
               {/* Description */}
               <motion.div
                 variants={container(0.4)}
                 initial="hidden"
                 whileInView="show"
                 className='flex-1 bg-[#ada2fa] py-3 px-4'>
-                <p className="rounded text-black text-m font-normal text-justify">
+                <p className="rounded text-black text-base md:text-lg font-normal text-justify">
                   Creation of a browser extension for Google Chrome that sets a new homepage every time a tab is opened. This extension displays a NASA photo along with a description of the image, with all content fetched from the NASA API. Each time a tab is opened, a new image and description are presented. Users can also save the fetched information for later viewing.
                 </p>
               </motion.div>
 
               {/* Stacks and Button */}
-              <div className="flex flex-col justify-between flex-1 gap-2">
+              <div className="flex flex-col justify-between flex-1 gap-4">
 
                 {/* Stacks */}
                 <motion.div
                   variants={container(0.5)}
                   initial="hidden"
                   whileInView="show"
-                  className="bg-[#f9ff9e] py-3 px-4 grid grid-cols-2 gap-2 text-5xl place-content-center place-items-center">
-                  <motion.div
-                    variants={iconAnimation(0.8)}>
+                  className="bg-[#f9ff9e] py-3 px-4 grid grid-cols-2 gap-4 text-4xl sm:text-5xl place-content-center place-items-center">
+                  <motion.div variants={iconAnimation(0.8)}>
                     <IoLogoJavascript className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
                   </motion.div>
-                  <motion.div
-                    variants={iconAnimation(1)}>
+                  <motion.div variants={iconAnimation(1)}>
                     <IoLogoHtml5 className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
                   </motion.div>
-                  <motion.div
-                    variants={iconAnimation(1.2)}>
+                  <motion.div variants={iconAnimation(1.2)}>
                     <IoLogoCss3 className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
                   </motion.div>
-                  <motion.div
-                    variants={iconAnimation(1.4)}>
+                  <motion.div variants={iconAnimation(1.4)}>
                     <FaGithub className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
                   </motion.div>
                 </motion.div>
 
-                {/* Button */}
-                <motion.div
-                  variants={container(0.7)}
-                  initial="hidden"
-                  whileInView="show"
-                  className="bg-[#4a9174] py-3 px-4 text-center">
+                {/* Buttons */}
+                <div className="flex flex-col gap-4">
+                  <motion.div
+                    variants={container(0.7)}
+                    initial="hidden"
+                    whileInView="show"
+                    className="bg-[#4a9174] py-3 px-4 text-center">
+                    <motion.div variants={iconAnimation(0.8)}>
+                      <a href="https://space-ship-chrome-extension.vercel.app/" target='_blank' rel='noopener noreferrer'>
+                        <button className="relative bg-[#67ab8e] text-[#f9ffa1] text-lg md:text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
+                          View Live Demo
+                          <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
+                        </button>
+                      </a>
+                    </motion.div>
+                  </motion.div>
 
                   <motion.div
-                    variants={iconAnimation(0.8)}>
-                      <a href="https://space-ship-chrome-extension.vercel.app/"
-                      target='_blank'>
-                    <button className="relative bg-[#67ab8e] text-[#f9ffa1] text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
-                      View Live Demo
-                      <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
-                    </button>
-                    </a>
-                    
+                    variants={container(0.9)}
+                    initial="hidden"
+                    whileInView="show"
+                    className="bg-[#e7e3ff] py-3 px-4 text-center">
+                    <motion.div variants={iconAnimation(1.1)}>
+                      <a href="https://github.com/PaulineTaillemite/SpaceShip-Chrome-Extension/blob/main/README.md" target='_blank' rel='noopener noreferrer'>
+                        <button className="relative bg-[#c3b5ff] text-black text-lg md:text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
+                          View On GitHub
+                          <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
+                        </button>
+                      </a>
+                    </motion.div>
                   </motion.div>
-                </motion.div>
-
-                <motion.div
-                  variants={container(0.9)}
-                  initial="hidden"
-                  whileInView="show"
-                  className="bg-[#e7e3ff] py-3 px-4 text-center">
-                  <motion.div
-                    variants={iconAnimation(1.1)}>
-                      <a href="https://github.com/PaulineTaillemite/SpaceShip-Chrome-Extension/blob/main/README.md"
-                      target='_blank'>
-                    <button className="relative bg-[#c3b5ff] text-black text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
-                      View On GitHub
-                      <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
-                    </button>
-                    </a>
-                  </motion.div>
-                </motion.div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+
+
 
 
       {/* PROJECT WEATHER APP */}
@@ -503,12 +448,12 @@ const MyProjects = () => {
                   className="bg-[#4a9174] py-3 px-4 text-center">
                   <motion.div
                     variants={iconAnimation2(0.8)}>
-                      <a href="https://my-weather-app-orpin.vercel.app/"
+                    <a href="https://my-weather-app-orpin.vercel.app/"
                       target='_blank'>
-                    <button className="relative bg-[#67ab8e] text-[#f9ffa1] text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
-                      View Live Demo
-                      <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
-                    </button>
+                      <button className="relative bg-[#67ab8e] text-[#f9ffa1] text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
+                        View Live Demo
+                        <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
+                      </button>
                     </a>
                   </motion.div>
                 </motion.div>
@@ -521,12 +466,12 @@ const MyProjects = () => {
                   className="bg-[#e7e3ff] py-3 px-4 text-center">
                   <motion.div
                     variants={iconAnimation2(1)}>
-                      <a href="https://github.com/PaulineTaillemite/My-Weather-App/blob/main/README.md"
+                    <a href="https://github.com/PaulineTaillemite/My-Weather-App/blob/main/README.md"
                       target='_blank'>
-                    <button className="relative bg-[#c3b5ff] text-black text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
-                      View On GitHub
-                      <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
-                    </button>
+                      <button className="relative bg-[#c3b5ff] text-black text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
+                        View On GitHub
+                        <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
+                      </button>
                     </a>
                   </motion.div>
                 </motion.div>
@@ -673,12 +618,12 @@ const MyProjects = () => {
                   className="bg-[#4a9174] py-3 px-4 text-center">
                   <motion.div
                     variants={iconAnimation(0.8)}>
-                      <a href="https://find-me-a-movie.vercel.app/"
+                    <a href="https://find-me-a-movie.vercel.app/"
                       target='_blank'>
-                    <button className="relative bg-[#67ab8e] text-[#f9ffa1] text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
-                      View Live Demo
-                      <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
-                    </button>
+                      <button className="relative bg-[#67ab8e] text-[#f9ffa1] text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
+                        View Live Demo
+                        <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
+                      </button>
                     </a>
 
                   </motion.div>
@@ -691,12 +636,12 @@ const MyProjects = () => {
                   className="bg-[#e7e3ff] py-3 px-4 text-center">
                   <motion.div
                     variants={iconAnimation(1.1)}>
-                      <a href="https://github.com/PaulineTaillemite/Projet-collectif-Ada-KoiKonRegarde"
+                    <a href="https://github.com/PaulineTaillemite/Projet-collectif-Ada-KoiKonRegarde"
                       target='_blank'>
-                    <button className="relative bg-[#c3b5ff] text-black text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
-                      View On GitHub
-                      <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
-                    </button>
+                      <button className="relative bg-[#c3b5ff] text-black text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
+                        View On GitHub
+                        <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
+                      </button>
                     </a>
                   </motion.div>
                 </motion.div>
