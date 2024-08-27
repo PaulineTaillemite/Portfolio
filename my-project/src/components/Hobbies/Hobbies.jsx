@@ -37,13 +37,13 @@ const Hobbies = () => {
             </div>
           </section>
 
-          <div className="carousel carousel-end rounded-box">
+          <div className="carousel carousel-center rounded-box">
             {hobbiesList.map((hobby) => (
               <div key={hobby.id} className="carousel-item relative group">
                 <img src={hobby.img} alt={hobby.title} className="h-128 w-auto object-cover group-hover:blur-sm transition duration-300" />
 
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-white uppercase font-semibold text-sm px-2 py-1">{hobby.text}</p>
+                  <p className="text-white/60 text-center lowercase font-medium text-4xl px-2 py-1">{hobby.text}</p>
                 </div>
               </div>
             ))}
