@@ -99,14 +99,14 @@ const Hero = () => {
                                     </motion.div>
                                 </div>
                             </div>
-                            <div className='absolute -right-6 md:-right-32 bottom-0 z-10'>
+                            <div className='absolute -right-20 md:-right-32 bottom-0 z-10'>
                                 <motion.img
                                     initial={{ x: -100 }}
                                     whileInView={{ x: 0 }}
                                     transition={{ duration: 1.1, type: "spring" }}
                                     src={myFace}
                                     alt=""
-                                    className='img-shadow scale-100 w-[150px] sm:w-[250px] md:w-full'
+                                    className='md:img-shadow lg:img-shadow scale-100 w-[250px] sm:w-[250px] md:w-full'
                                 />
                             </div>
                         </div>
