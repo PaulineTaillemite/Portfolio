@@ -26,13 +26,17 @@ const Hero = () => {
     return (
         <div>
 
+           
+            {/* Arrière-plan rose pour les petits écrans */}
+            <div className="absolute inset-0 bg-[#9cd4d9] md:hidden z-[-1]"></div>
+
             <main className='text-white'>
                 <video
                     src={backgroundMp42}
                     autoPlay
                     loop
                     muted
-                    className="w-full h-screen absolute z-[-1] object-cover top-0 md:block"
+                    className="w-full h-screen absolute z-[-1] object-cover top-0 hidden md:block"
                 />
 
                 <div className="container">
@@ -147,6 +151,7 @@ const Hero = () => {
                     </div>
                 </div>
             </main>
+            
         </div>
     );
 }
