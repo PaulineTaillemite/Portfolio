@@ -203,7 +203,7 @@ const MyProjects = () => {
 
       {/* PROJECT VIPERS */}
       <div className='bg-black text-white'>
-        <div className="container mx-auto pt-24 px-4 sm:px-6 md:px-8 lg:px-10 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="container mx-auto pt-36 md:pt-0 lg:pt-0 px-4 sm:px-6 md:px-8 lg:px-10 grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* Content Section */}
           <div className="flex flex-col justify-center gap-4">
 
@@ -310,7 +310,7 @@ const MyProjects = () => {
 
       {/* PROJECT SPACESHIP */}
       <div className='bg-black text-white'>
-        <div className="container mx-auto pt-36 px-4 sm:px-6 md:px-8 lg:px-10 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="container mx-auto pt-36 md:pt-0 lg:pt-0 px-4 sm:px-6 md:px-8 lg:px-10 grid grid-cols-1 md:grid-cols-2 gap-4">
 
           {/* Image Section */}
           <motion.div
@@ -416,221 +416,221 @@ const MyProjects = () => {
 
 
 
-{/* PROJECT WEATHER APP */}
-<div className='bg-black text-white'>
-  <div className="container mx-auto pt-24 px-4 sm:px-6 md:px-8 lg:px-10 grid grid-cols-1 md:grid-cols-2 gap-4">
+      {/* PROJECT WEATHER APP */}
+      <div className='bg-black text-white'>
+        <div className="container mx-auto pt-36 md:pt-0 lg:pt-0 px-4 sm:px-6 md:px-8 lg:px-10 grid grid-cols-1 md:grid-cols-2 gap-4">
 
-    {/* Content Section */}
-    <div className="flex flex-col justify-center gap-4">
+          {/* Content Section */}
+          <div className="flex flex-col justify-center gap-4">
 
-      {/* Title */}
-      <motion.div
-        variants={container2(0.2)}
-        initial="hidden"
-        whileInView="show"
-        className="bg-black py-3 px-2 text-left md:text-right">
-        <p className="text-white text-5xl sm:text-6xl md:text-6xl font-medium group hover:scale-105 duration-500 tracking-tight lowercase">
-          My Weather App
-        </p>
-      </motion.div>
+            {/* Title */}
+            <motion.div
+              variants={container2(0.2)}
+              initial="hidden"
+              whileInView="show"
+              className="bg-black py-3 px-2 text-left md:text-right">
+              <p className="text-white text-5xl sm:text-6xl md:text-6xl font-medium group hover:scale-105 duration-500 tracking-tight lowercase">
+                My Weather App
+              </p>
+            </motion.div>
 
-      {/* Main Content */}
-      <div className="flex flex-col md:flex-row gap-4">
+            {/* Main Content */}
+            <div className="flex flex-col md:flex-row gap-4">
 
-        {/* Description */}
-        <motion.div
-          variants={container2(0.4)}
-          initial="hidden"
-          whileInView="show"
-          className='flex-1 bg-[#ada2fa] py-3 px-4'>
-          <p className="rounded text-black text-base md:text-lg font-normal text-justify">
-            "My Weather App" is a web application that provides a clear and instant view of weather conditions. By leveraging the Open Weather API, this app displays real-time weather updates and forecasts for any global location. With its user-friendly and responsive interface, it keeps you informed of weather changes wherever you are.
-          </p>
-        </motion.div>
+              {/* Description */}
+              <motion.div
+                variants={container2(0.4)}
+                initial="hidden"
+                whileInView="show"
+                className='flex-1 bg-[#ada2fa] py-3 px-4'>
+                <p className="rounded text-black text-base md:text-lg font-normal text-justify">
+                  "My Weather App" is a web application that provides a clear and instant view of weather conditions. By leveraging the Open Weather API, this app displays real-time weather updates and forecasts for any global location. With its user-friendly and responsive interface, it keeps you informed of weather changes wherever you are.
+                </p>
+              </motion.div>
 
-        {/* Stacks and Buttons */}
-        <div className="flex flex-col justify-between flex-1 gap-4">
+              {/* Stacks and Buttons */}
+              <div className="flex flex-col justify-between flex-1 gap-4">
 
-          {/* Stacks */}
+                {/* Stacks */}
+                <motion.div
+                  variants={container2(0.9)}
+                  initial="hidden"
+                  whileInView="show"
+                  className="bg-[#f9ff9e] py-3 px-4 grid grid-cols-2 gap-4 text-4xl sm:text-5xl place-content-center place-items-center">
+                  <motion.div variants={iconAnimation2(0.8)}>
+                    <IoLogoJavascript className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
+                  </motion.div>
+                  <motion.div variants={iconAnimation2(1)}>
+                    <IoLogoHtml5 className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
+                  </motion.div>
+                  <motion.div variants={iconAnimation2(1.2)}>
+                    <IoLogoCss3 className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
+                  </motion.div>
+                  <motion.div variants={iconAnimation2(1.4)}>
+                    <FaGithub className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
+                  </motion.div>
+                </motion.div>
+
+                {/* Buttons */}
+                <div className="flex flex-col gap-4">
+
+                  {/* Button - View Live Demo */}
+                  <motion.div
+                    variants={container2(0.5)}
+                    initial="hidden"
+                    whileInView="show"
+                    className="bg-[#4a9174] py-3 px-4 text-center">
+                    <motion.div variants={iconAnimation2(0.8)}>
+                      <a href="https://my-weather-app-orpin.vercel.app/" target='_blank' rel='noopener noreferrer'>
+                        <button className="relative bg-[#67ab8e] text-[#f9ffa1] text-lg md:text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
+                          View Live Demo
+                          <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
+                        </button>
+                      </a>
+                    </motion.div>
+                  </motion.div>
+
+                  {/* Button - View On GitHub */}
+                  <motion.div
+                    variants={container2(0.7)}
+                    initial="hidden"
+                    whileInView="show"
+                    className="bg-[#e7e3ff] py-3 px-4 text-center">
+                    <motion.div variants={iconAnimation2(1)}>
+                      <a href="https://github.com/PaulineTaillemite/My-Weather-App/blob/main/README.md" target='_blank' rel='noopener noreferrer'>
+                        <button className="relative bg-[#c3b5ff] text-black text-lg md:text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
+                          View On GitHub
+                          <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
+                        </button>
+                      </a>
+                    </motion.div>
+                  </motion.div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Image Section */}
           <motion.div
-            variants={container2(0.9)}
+            variants={container2(0.2)}
             initial="hidden"
             whileInView="show"
-            className="bg-[#f9ff9e] py-3 px-4 grid grid-cols-2 gap-4 text-4xl sm:text-5xl place-content-center place-items-center">
-            <motion.div variants={iconAnimation2(0.8)}>
-              <IoLogoJavascript className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
-            </motion.div>
-            <motion.div variants={iconAnimation2(1)}>
-              <IoLogoHtml5 className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
-            </motion.div>
-            <motion.div variants={iconAnimation2(1.2)}>
-              <IoLogoCss3 className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
-            </motion.div>
-            <motion.div variants={iconAnimation2(1.4)}>
-              <FaGithub className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
-            </motion.div>
+            className="flex items-center justify-center">
+            <div className="mockup-window bg-[#333] border border-[#555] max-w-full mx-auto hover:scale-105 duration-500">
+              <div className="bg-[#222] flex justify-center">
+                <img src={Weather} alt="Project" className="rounded-lg shadow-lg w-full" />
+              </div>
+            </div>
           </motion.div>
 
-          {/* Buttons */}
-          <div className="flex flex-col gap-4">
+        </div>
+      </div>
 
-            {/* Button - View Live Demo */}
+      {/* PROJECT KOIKONREGARDE */}
+      <div className='bg-black text-white'>
+        <div className="container mx-auto pt-36 md:pt-0 lg:pt-0 px-4 sm:px-6 md:px-8 lg:px-10 grid grid-cols-1 md:grid-cols-2 gap-4">
+
+          {/* Image Section */}
+          <motion.div
+            variants={container2(0.2)}
+            initial="hidden"
+            whileInView="show"
+            className="flex items-center justify-center">
+            <div className="mockup-window bg-[#333] border border-[#555] max-w-full mx-auto hover:scale-105 duration-500">
+              <div className="bg-[#222] flex justify-center">
+                <img src={Koikonregarde} alt="Project" className="rounded-lg shadow-lg w-full" />
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Content Section */}
+          <div className="flex flex-col justify-center gap-4">
+
+            {/* Title */}
             <motion.div
-              variants={container2(0.5)}
+              variants={container(0.2)}
               initial="hidden"
               whileInView="show"
-              className="bg-[#4a9174] py-3 px-4 text-center">
-              <motion.div variants={iconAnimation2(0.8)}>
-                <a href="https://my-weather-app-orpin.vercel.app/" target='_blank' rel='noopener noreferrer'>
-                  <button className="relative bg-[#67ab8e] text-[#f9ffa1] text-lg md:text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
-                    View Live Demo
-                    <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
-                  </button>
-                </a>
-              </motion.div>
+              className="bg-black py-3 px-4 text-left">
+              <p className="text-white text-5xl sm:text-6xl md:text-6xl font-medium group hover:scale-105 duration-500 tracking-tight lowercase">
+                Find Me A Movie
+              </p>
             </motion.div>
 
-            {/* Button - View On GitHub */}
-            <motion.div
-              variants={container2(0.7)}
-              initial="hidden"
-              whileInView="show"
-              className="bg-[#e7e3ff] py-3 px-4 text-center">
-              <motion.div variants={iconAnimation2(1)}>
-                <a href="https://github.com/PaulineTaillemite/My-Weather-App/blob/main/README.md" target='_blank' rel='noopener noreferrer'>
-                  <button className="relative bg-[#c3b5ff] text-black text-lg md:text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
-                    View On GitHub
-                    <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
-                  </button>
-                </a>
+            {/* Main Content */}
+            <div className="flex flex-col md:flex-row gap-4">
+
+              {/* Description */}
+              <motion.div
+                variants={container(0.4)}
+                initial="hidden"
+                whileInView="show"
+                className='flex-1 bg-[#ada2fa] py-3 px-4'>
+                <p className="rounded text-black text-base md:text-lg font-normal text-justify">
+                  Creation of a browser extension for Google Chrome that sets a new homepage every time a tab is opened. This extension displays a NASA photo along with a description of the image, with all content fetched from the NASA API. Each time a tab is opened, a new image and description are presented. Users can also save the fetched information for later viewing.
+                </p>
               </motion.div>
-            </motion.div>
+
+              {/* Stacks and Buttons */}
+              <div className="flex flex-col justify-between flex-1 gap-4">
+
+                {/* Stacks */}
+                <motion.div
+                  variants={container(0.5)}
+                  initial="hidden"
+                  whileInView="show"
+                  className="bg-[#f9ff9e] py-3 px-4 grid grid-cols-2 gap-4 text-4xl sm:text-5xl place-content-center place-items-center">
+                  <motion.div variants={iconAnimation(0.8)}>
+                    <IoLogoJavascript className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
+                  </motion.div>
+                  <motion.div variants={iconAnimation(1)}>
+                    <IoLogoHtml5 className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
+                  </motion.div>
+                  <motion.div variants={iconAnimation(1.2)}>
+                    <IoLogoCss3 className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
+                  </motion.div>
+                  <motion.div variants={iconAnimation(1.4)}>
+                    <FaGithub className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
+                  </motion.div>
+                </motion.div>
+
+                {/* Buttons */}
+                <div className="flex flex-col gap-4">
+                  <motion.div
+                    variants={container(0.7)}
+                    initial="hidden"
+                    whileInView="show"
+                    className="bg-[#4a9174] py-3 px-4 text-center">
+                    <motion.div variants={iconAnimation(0.8)}>
+                      <a href="https://find-me-a-movie.vercel.app/" target='_blank' rel='noopener noreferrer'>
+                        <button className="relative bg-[#67ab8e] text-[#f9ffa1] text-lg md:text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
+                          View Live Demo
+                          <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
+                        </button>
+                      </a>
+                    </motion.div>
+                  </motion.div>
+
+                  <motion.div
+                    variants={container(0.9)}
+                    initial="hidden"
+                    whileInView="show"
+                    className="bg-[#e7e3ff] py-3 px-4 text-center">
+                    <motion.div variants={iconAnimation(1.1)}>
+                      <a href="https://github.com/PaulineTaillemite/Projet-collectif-Ada-KoiKonRegarde" target='_blank' rel='noopener noreferrer'>
+                        <button className="relative bg-[#c3b5ff] text-black text-lg md:text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
+                          View On GitHub
+                          <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
+                        </button>
+                      </a>
+                    </motion.div>
+                  </motion.div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-    {/* Image Section */}
-    <motion.div
-      variants={container2(0.2)}
-      initial="hidden"
-      whileInView="show"
-      className="flex items-center justify-center">
-      <div className="mockup-window bg-[#333] border border-[#555] max-w-full mx-auto hover:scale-105 duration-500">
-        <div className="bg-[#222] flex justify-center">
-          <img src={Weather} alt="Project" className="rounded-lg shadow-lg w-full" />
-        </div>
-      </div>
-    </motion.div>
-
-  </div>
-</div>
-
-   {/* PROJECT KOIKONREGARDE */}
-<div className='bg-black text-white'>
-  <div className="container mx-auto pt-36 px-4 sm:px-6 md:px-8 lg:px-10 grid grid-cols-1 md:grid-cols-2 gap-4">
-
-    {/* Image Section */}
-    <motion.div
-      variants={container2(0.2)}
-      initial="hidden"
-      whileInView="show"
-      className="flex items-center justify-center">
-      <div className="mockup-window bg-[#333] border border-[#555] max-w-full mx-auto hover:scale-105 duration-500">
-        <div className="bg-[#222] flex justify-center">
-          <img src={Koikonregarde} alt="Project" className="rounded-lg shadow-lg w-full" />
-        </div>
-      </div>
-    </motion.div>
-
-    {/* Content Section */}
-    <div className="flex flex-col justify-center gap-4">
-
-      {/* Title */}
-      <motion.div
-        variants={container(0.2)}
-        initial="hidden"
-        whileInView="show"
-        className="bg-black py-3 px-4 text-left">
-        <p className="text-white text-5xl sm:text-6xl md:text-6xl font-medium group hover:scale-105 duration-500 tracking-tight lowercase">
-          Find Me A Movie
-        </p>
-      </motion.div>
-
-      {/* Main Content */}
-      <div className="flex flex-col md:flex-row gap-4">
-
-        {/* Description */}
-        <motion.div
-          variants={container(0.4)}
-          initial="hidden"
-          whileInView="show"
-          className='flex-1 bg-[#ada2fa] py-3 px-4'>
-          <p className="rounded text-black text-base md:text-lg font-normal text-justify">
-            Creation of a browser extension for Google Chrome that sets a new homepage every time a tab is opened. This extension displays a NASA photo along with a description of the image, with all content fetched from the NASA API. Each time a tab is opened, a new image and description are presented. Users can also save the fetched information for later viewing.
-          </p>
-        </motion.div>
-
-        {/* Stacks and Buttons */}
-        <div className="flex flex-col justify-between flex-1 gap-4">
-
-          {/* Stacks */}
-          <motion.div
-            variants={container(0.5)}
-            initial="hidden"
-            whileInView="show"
-            className="bg-[#f9ff9e] py-3 px-4 grid grid-cols-2 gap-4 text-4xl sm:text-5xl place-content-center place-items-center">
-            <motion.div variants={iconAnimation(0.8)}>
-              <IoLogoJavascript className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
-            </motion.div>
-            <motion.div variants={iconAnimation(1)}>
-              <IoLogoHtml5 className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
-            </motion.div>
-            <motion.div variants={iconAnimation(1.2)}>
-              <IoLogoCss3 className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
-            </motion.div>
-            <motion.div variants={iconAnimation(1.4)}>
-              <FaGithub className="hover:scale-125 transition-transform duration-200 text-darkcolor" />
-            </motion.div>
-          </motion.div>
-
-          {/* Buttons */}
-          <div className="flex flex-col gap-4">
-            <motion.div
-              variants={container(0.7)}
-              initial="hidden"
-              whileInView="show"
-              className="bg-[#4a9174] py-3 px-4 text-center">
-              <motion.div variants={iconAnimation(0.8)}>
-                <a href="https://find-me-a-movie.vercel.app/" target='_blank' rel='noopener noreferrer'>
-                  <button className="relative bg-[#67ab8e] text-[#f9ffa1] text-lg md:text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
-                    View Live Demo
-                    <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
-                  </button>
-                </a>
-              </motion.div>
-            </motion.div>
-
-            <motion.div
-              variants={container(0.9)}
-              initial="hidden"
-              whileInView="show"
-              className="bg-[#e7e3ff] py-3 px-4 text-center">
-              <motion.div variants={iconAnimation(1.1)}>
-                <a href="https://github.com/PaulineTaillemite/Projet-collectif-Ada-KoiKonRegarde" target='_blank' rel='noopener noreferrer'>
-                  <button className="relative bg-[#c3b5ff] text-black text-lg md:text-xl font-medium p-2 flex items-center justify-center gap-2 group transition duration-200 ease-in-out transform hover:translate-x-2 tracking-tight rounded-xl">
-                    View On GitHub
-                    <FaArrowRight className="text-sm group-hover:translate-x-2 transition duration-200" />
-                  </button>
-                </a>
-              </motion.div>
-            </motion.div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
 
       <div className='bg-black py-14'>
