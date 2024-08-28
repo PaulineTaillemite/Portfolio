@@ -88,7 +88,7 @@ const projectList = [
 
 const MyProjects = () => {
   return (
-    <div className="relative bg-black">
+    <div className="relative bg-black overflow-x-hidden">
 
 
       <Navbar />
