@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Flicking from "@egjs/react-flicking";
 import "@egjs/react-flicking/dist/flicking.css";
-
 import Img1 from '.././assets/carousseltest2/img1.jpg';
 import Img2 from '.././assets/carousseltest2/img2.jpg';
 import Img3 from '.././assets/carousseltest2/img3.jpg';
@@ -25,6 +24,16 @@ const hobbiesList = [
 ];
 
 const Hobbies = () => {
+  const flickingRef = useRef(null);
+
+  const goToPrev = () => {
+    flickingRef.current.prev();
+  };
+
+  const goToNext = () => {
+    flickingRef.current.next();
+  };
+
   return (
     <div>
       <main className="bg-black text-white py-16">
@@ -34,22 +43,40 @@ const Hobbies = () => {
               <p className="text-sm opacity-70 tracking-widest transform translate-y-3">- Hobbies</p>
               <h1 className="text-2xl lg:text-3xl">More about what's in my mind.</h1>
               <p className='text-sm leading-6 opacity-90'>
-              When I'm not immersed in re-coding the world, you’ll often find me savoring bao buns with my daughter during the day, sharing laughter and creating memories. As the evening sets in, I switch gears and dive into epic battles on my PS5, where I take on the dark forces with unwavering determination. It’s a balance of indulgence and adventure, where family time and gaming each have their place.
+                When I'm not immersed in re-coding the world, you’ll often find me savoring bao buns with my daughter during the day, sharing laughter and creating memories. As the evening sets in, I switch gears and dive into epic battles on my PS5, where I take on the dark forces with unwavering determination. It’s a balance of indulgence and adventure, where family time and gaming each have their place.
               </p>
             </div>
           </section>
 
-          <Flicking circular={true} className="rounded-box">
-            {hobbiesList.map((hobby, index) => (
+          <Flicking
+            circular={true}
+            className="rounded-box"
+            ref={flickingRef}
+          >
+            {hobbiesList.map((hobby) => (
               <div key={hobby.id} className="grid-panel relative group flex justify-center items-center">
                 <img src={hobby.img} alt={hobby.title} className="h-96 w-96 object-cover group-hover:blur-sm transition duration-300" />
-                
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <p className="text-white/60 text-center lowercase font-medium text-4xl px-2 py-1">{hobby.text}</p>
                 </div>
               </div>
             ))}
           </Flicking>
+
+          <div className="flex justify-center mt-4">
+            <button
+              onClick={goToPrev}
+              className="bg-gray-800 text-white p-2 rounded-full mx-2 hover:bg-gray-600"
+            >
+              &#9664;
+            </button>
+            <button
+              onClick={goToNext}
+              className="bg-gray-800 text-white p-2 rounded-full mx-2 hover:bg-gray-600"
+            >
+              &#9654;
+            </button>
+          </div>
         </div>
       </main>
     </div>
