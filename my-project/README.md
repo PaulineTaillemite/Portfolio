@@ -12,3 +12,7 @@ to do  :
 * ajouter projet doggo-api rails
 * ajouter le fortune cookie
 * modifier à propos (ajouter xp qonto)
+ ceci est untest
+
+
+ 
